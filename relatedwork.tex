@@ -1,0 +1,27 @@
+\chapter{Background / Related Work}\label{C:related}
+
+\section{How to trace a test}
+
+David Pearce is currently writing a language called Whiley, which contains an extended static checking framework in order to eliminate run time exceptions. This language is written in Java and such, for the tracing of a test suite there are two approaches that are viable; either using AspectJ or Java Debugging Interface (JDI). JDI is similar to using a observer pattern, when a set of classes methods are called, the listening classes will be notified. AspectJ utilises byte code weaving; it allows for several methods to achieve tracing through byte code weaving:
+
+\begin{itemize}
+\item Compile time
+The classes are compiled with the aspect weaved into them. So that when the jar is executed, the methods have the byte code from the aspect weaved into it.
+\item Load time
+This involves binary weaving deferred until the point in which a class loader will attempt to load in a class file and define it to the java virtual machine (JVM).
+\end{itemize}
+
+Load time weaving was the preferred method. The projects often had a large number of modules and dependencies. If compile time weaving was to be used, then each would have to be re-compiled using the AspectJ's compiler. Instead, load time allows for easier integration to existing projects.
+
+Between JDI and AspectJ, AspectJ allowed for stronger ability to choose which methods to record and gave more ability to retrieve the parameters however JDI was faster to execute. The decision to use AspectJ was based off a trade off between more information and performance. The analysis framework was able to be altered to increase the performance of it, so having the extra information that AspectJ gave was more important than an taking less time to execute.
+
+\section{Continuous Integration}
+
+This is described as merging of all the developer work several times a day and to run automated tests to ensure that the any of the changes do not break the project. This leads to reduced amount of integration issues, and if they do occur they would be smaller as the amount worked on is less. However, this means that the testing after an integration has to be done in a timely fashion otherwise it won’t be finished by the time of the next integration.
+
+\section{Test Driven Development}
+\todo{todo}
+
+\section{Related Work}
+
+Testing is a critical part to any software, not only to stop incidents stemming from it, but because of the increase in popularity of agile\todo{ref} where ideas\todo{hmm} such as the two methodologies identified previously are often backbones to many of the agile methodologies. Code integration is becoming increasingly important, so is ensuring that the testing of the integration is within a time frame. For this reason there have been papers that examine the different approaches that can be taken to identify redundant test cases and reduce the size of the test suites. Although reducing the size of the test suite programmatically could lead to issues. Unless two tests are exactly the same then there is no guarantee that two tests are redundant, even when one is a direct subset of another. This is because if $A \subset B$, then the state of the program may be different if $A \sqcup B \ne  \emptyset $. In this case, the tests may indeed look similar from a program point of view, but testing different situations.
