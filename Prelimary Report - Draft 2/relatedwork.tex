@@ -1,0 +1,14 @@
+\chapter{Background}\label{C:related}
+
+\section{Continuous Integration}
+
+The idea was first introduced by Grady Booch \cite{booch2006object}. It is described as merging of all the developer work several times a day and to run automated tests to ensure that the any of the changes do not break the project. This leads to reduced amount of integration issues, and if they do occur they would be smaller as the amount worked on is less. However, this means that the testing after an integration has to be done in a timely fashion otherwise it won’t be finished by the time of the next integration.
+
+\section{Test Driven Development}
+\todo{Talk about this?}
+
+\section{Related Work}
+
+Testing is a critical part to any software, not only to stop incidents stemming from it, but because of the increase in popularity of agile \cite{chaos} where software development processes such as the two identified previously are often backbones to many of the agile methodologies. Code integration is becoming increasingly important, so is ensuring that the testing of the integration is within a time frame. For this reason there have been papers that examine the different approaches that can be taken to identify redundant test cases and reduce the size of the test suites. Although reducing the size of the test suite programmatically could lead to issues. Unless two tests are exactly the same then there is no guarantee that two tests are redundant, even when one is a direct subset of another. This is because if $A \subset B$, then the state of the program may be different if $A \sqcup B \ne  \emptyset $.\todo{Dont think that last past was worded well.} In this case, the tests may indeed look similar from a programs point of view, but in reality are testing different situations.
+
+There are two sets of approaches used, static and dynamic checking for redundancy. Li, Francis and Robinson \cite{li2008static} examined through static checking the number of test that may be redundant. Through using three different metrics, Manhattan distance, unigram cosine similarity and bigram cosine similarity they concluded that between 7\% - 23\% were redundant and required manual checking \todo{Feel Like I need to look at another dynamic papers range}. The range concluded may show that static detection can be useful in situations where dynamic data can not be gathered. Fraser and Wotawa \cite{fraser2007redundancy} use the coverage of a test suite to determine the redundancy level as they define it containing redundant if a part of a test case does not contribute to the fault detection ability. A execution tree is used, which is similar to a partial context tree. However, they fail to take into account for changes in state of the program that may occur outside of the similarity. So removing a rest is more likely to lead to less bug identification.

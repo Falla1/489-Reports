@@ -1,0 +1,17 @@
+\chapter{Future Work}\label{C:future}
+
+\section{Analysis Methods}
+From here there are several different approaches that David and I propose. The first consideration is take into account for the extra data that AspectJ gives us. This involves holding the primitive values. To hold every occurrence of the data would be unnecessary as it would be good enough to hold which side the value is on. For example, true and false would be held, and for number values, the values that would be held are -1, 0 and 1. This gives us more information such as when an edge case is being tested with a negative value. Although it would be appropriate to hold the object, this is not viable. Since this would require every object to have a method where it gives enough details about that object. Although there is a toString() method, this is not always overridden or gives enough information.
+
+Since this project is to not say whether two tests are the same, but to suggest to a user that two tests may be the same and they require human observation. A GUI containing more information about a pipelines result data. Where the user can see statistics about the tests and test suite. \todo{Be more specific?}
+
+\section{Evaluation}
+The method of evaluation is going to be through how well the framework allows for redundant tests to be identified. The range of algorithms implemented will be executed and the results examined. To do this examination, manual inspection of the tests will have to be done in order to judge how well the framework is identifying potential redundant tests. Using actively developed benchmarks allows for this information to be relayed to these developers and ask for their thoughts on the tests. \todo{Unsure on this}
+
+\section{Final Report}
+A final report will have to be written to give an in depth analysis of this research. This will include analysing the results and coming to a conclusion of whether this framework has potential to be useful in an active development environment. \todo{Need more here}
+
+\section{Requests for feedback}
+\todo{Need to discuss}
+
+\todo{Gantt Chart?}
