@@ -10,9 +10,9 @@ The first goal of the project was to create a framework to trace tests and allow
 The ability to allow for a user defined pipeline is important in limiting the amount of hard coding. Ant uses it’s own JUnit runner class to execute the tests. This means that parameters would be difficult to input without executing the Ant file through another main method in order to create the pipelines. Doing this would be create messy and unwanted code. Therefore a properties file was the other viable approach which would be loaded in during the static method construction. The purpose of this properties file was to not only a change to the settings of a run, such as the results file name, the type of service it should use but also allowing for a ‘pipeline’ approach to be used. This pipeline will be used for the analysis where the pipeline can specify the type of analysis and its setting, shown in figure \ref{fig:pipeline}. The main pattern used to limit the amount of hard code when parsing the file was factory patterns. \todo{Show class diagram of a pipeline?}
 
 \begin{figure}[h]
+\includegraphics[width=\textwidth]{Pipeline.jpg}
 \caption{Pipeline}
 \label{fig:pipeline}
-\includegraphics[width=\textwidth]{Pipeline.jpg}
 \end{figure}
 
 

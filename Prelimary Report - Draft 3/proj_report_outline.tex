@@ -11,7 +11,34 @@
 
 
 \usepackage{float} % lets you have non-floating floats
-
+\usepackage{listings}
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.96,0.96,0.95}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
 \usepackage{url} % for typesetting urls
 
 \usepackage{amsmath}
@@ -25,7 +52,7 @@
 
 %% These are standard LaTeX definitions for the document
 %%                            
-\title{Identifing redundent test cases}
+\title{Identifying Redundant Test Cases}
 \author{Marc Shaw : 300252702}
 
 %% This file can be used for creating a wide range of reports
@@ -45,7 +72,7 @@
 \usepackage[image,ecs,behons]{vuwproject}
 
 % You should specifiy your supervisor here with
-\supervisors{David J Pearce and Prof Lindsay Groves}
+\supervisors{Dr. David J Pearce and Prof. Lindsay Groves}
 
 % Unless you've used the bschonscomp or mcompsci
 %  options above use
@@ -66,15 +93,13 @@
 
 \begin{abstract}
 
-A short description of the project goes here.
+\todo{todo}
 
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \maketitle
-
-\include{acknowledge}
 
 \tableofcontents
 
@@ -91,8 +116,8 @@ A short description of the project goes here.
 \include{introduction}
 \include{relatedwork}
 \include{workdone}
+\include{results}
 \include{future}
-\include{conclusion}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
