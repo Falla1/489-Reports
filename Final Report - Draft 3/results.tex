@@ -1,0 +1,92 @@
+\chapter{Results}\label{C:results}
+
+This section examines the results of the bench marks. These results are in regard to the time taken, number of comparisons and the types of redundant tests identified.
+
+\section{Significant Testing}
+
+A Wilcoxon signed rank test is used to determine whether the results are significantly different or not. It is a paired difference test that compares two related samples. The significant level used is 95\%. In this paper, the parameters will be as follows:
+
+\begin{itemize}
+\item Pipeline size 2 vs Pipeline size 3
+\item Parameters vs No Parameters
+\item Weighting vs No Weighting
+\item Weighting\&Parameters vs Neither
+\end{itemize}
+
+
+\section{Pipeline Length Comparison}
+
+\begin{table}[]
+\centering
+\caption{Comparing 2 pipeline vs 3. - means pipeline 2 was significantly lower}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+{\bf }          & {\bf Total Time} & {\bf Number Of Comparisons} \\ \hline
+{\bf Whiley}    & +                & =                           \\ \hline
+{\bf Jasm}      & -                & =                           \\ \hline
+{\bf Ant}       & =                & =                           \\ \hline
+{\bf Spring}    & -                & =                           \\ \hline
+{\bf Imcache}   & -                & =                           \\ \hline
+{\bf Metrics-x} & +                & =                           \\ \hline
+\end{tabular}
+\end{table}
+
+\section{K Length Comparison}
+
+
+
+\section{Parameter Comparison}
+
+\begin{table}[]
+\centering
+\caption{Comparing parameters with no parameters. - means parameters was significantly lower}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+{\bf }          & {\bf Total Time} & {\bf Number Of Comparisons} \\ \hline
+{\bf Whiley}    & -                & -                           \\ \hline
+{\bf Jasm}      & =                & =                           \\ \hline
+{\bf Ant}       & -                & =                           \\ \hline
+{\bf Spring}    & =                & -                           \\ \hline
+{\bf Imcache}   & -                & =                           \\ \hline
+{\bf Metrics-x} & +                & =                           \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Weighting Comparison}
+
+\begin{table}[]
+\centering
+\caption{Comparing weighting with no weighting.}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+{\bf }          & {\bf Total Time} & {\bf Number Of Comparisons} \\ \hline
+{\bf Whiley}    & -                & -                           \\ \hline
+{\bf Jasm}      & -                & -                           \\ \hline
+{\bf Ant}       & -                & -                           \\ \hline
+{\bf Spring}    & =                & -                           \\ \hline
+{\bf Imcache}   & -                & =                           \\ \hline
+{\bf Metrics-x} & -                & +                           \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Weighting and Parameter Comparison}
+
+\begin{table}[]
+\centering
+\caption{Comparing weighting and parameter with no weighting or parameters values.}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+{\bf }          & {\bf Total Time} & {\bf Number Of Comparisons} \\ \hline
+{\bf Whiley}    & -                & -                           \\ \hline
+{\bf Jasm}      & -                & -                           \\ \hline
+{\bf Ant}       & -                & -                           \\ \hline
+{\bf Spring}    & -                & -                           \\ \hline
+{\bf Imcache}   & -                & =                           \\ \hline
+{\bf Metrics-x} & -                & +                           \\ \hline
+\end{tabular}
+\end{table}
+
