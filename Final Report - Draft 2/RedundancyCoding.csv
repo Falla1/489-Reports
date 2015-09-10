@@ -1,0 +1,19 @@
+,,,,
+,Whiley,,,
+Types of redundancy,Pipeline 2,Weighting,Parameters,Parameters  And Weighting
+Different Equation Value,6,6,6,6
+Different Equation Sign,8,8,8,8
+Different Array Values,2,2,0,0
+Same,10,10,10,10
+Limited Redundancy,2,0,0,0
+Rearranged Equation,2,2,2,2
+Extra if statement,2,2,2,2
+,,,,
+,,,,
+Total,32,30,28,28
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+Multiline comment 1 & 2 + RealDiv_valid1 & RealDiv_valid3 + Constrainedintvalid 13 & 14 + DoWhile_Valid3 & 2 + For_valid9 & 8 + Boolifelse_valid1 & 2,,,,

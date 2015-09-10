@@ -1,0 +1,95 @@
+\chapter{Evaluation}\label{C:evaluation}
+
+\section{Pipeline Length Comparison}
+
+An interesting result was the impact of the length of the pipeline had on the total time taken to analyse the data. The idea of the pipeline was to decrease the amount of comparisons that the each stage in the pipeline has to do. This in turn meant less memory consumption and time taken for the more computationally heavy stages. Looking at the results show that in most cases, having two pipeline stages meant a significantly decreased total time taken to analyse over a pipeline with three stages. Intuitively, this may go against what would make sense. Looking at Figure \ref{fig:pipelinegraph}, it shows that there is a major decrease in the number of comparisons that the last stage does between one stage and two or three stages. However, between two and three stages there is limited differences. These results imply that the test cases that took less time using a two stage, were spending more time on the second stage than they were saving from the reduced number of comparisons during the third stage. 
+
+There would be two different reasons that this result may occur. Firstly, as discussed in \todo{DISCUSS IN AN ABOVE CHAPTER.}, each benchmark had it's own level of redundancy that was being looked for, this was dependent on the size of the test cases of each. As benchmarks with smaller test cases needed to have a higher level of redundancy in comparison to benchmarks with larger test cases, as this meant they would have roughly the same percentage of difference. Since each benchmark had their own percentage, this implies that each benchmark also has their optimal settings for the second pipeline. The settings were chosen by experimenting with different options. Therefore, not using a near optimal second pipeline could have contributed to it. \todo{Need to explain it better}
+
+The second reason is that there may be little difference between the second pipeline and third pipeline. For example, if the first pipeline reduces the number of comparisons needed to 50, then there is a limited number of comparisons that a second pipeline can remove. This leads to a situation where the number of identified redundant test cases is similar for both pipelines.
+
+As expected of the redundant tests identified, for each benchmark there was no significant change. If there were a change between the two pipelines with the same final stage settings could imply two things. Firstly, there is a bug in the code. Secondly, for the three stage pipeline, the second stage is being more specific than the last. This would cause the last stage to be redundant and the redundant tests different to that of the two stage pipeline.
+
+\section{K Length Comparison}
+
+Increasing the depth of the calling context means adding more data to the test information used to do the analysis, intuitively making it more difficult for test cases to be the same. This should mean there is a decrease in the number of comparisons as the calling context depth increases. It also means that more data is going to have to be looked at which implies an increase in time as calling context depth increases.
+
+Examining Figure \ref{fig:kdepthgraph}, it shows that the number of redundant tests is only slightly decreased as the K depth increases. This may show several things. Firstly, using a depth of 1 is enough to separate the majority of test cases from each other and shows the redundant test cases with some false positives. This is not likely to be the answer. The reason being that this would make sense for some of the bench marks, however for it to occur to every benchmark makes it appear to be another reason. This other reason is likely to be due to the settings deployed in this comparison. Neither parameters or weighting was selected in the settings, as will be discussed in Sections \ref{sec:param} and \ref{sec:weight} these two setting have a large impact on the number of redundant tests. Another issue could be revolving around the number of comparisons that were output from the first pipeline stage. If the first pipeline stage output a low number of comparisons, then the comparisons output would more likely to be similar regardless of the K depth specified.
+
+\todo{Maybe look at a coding for the different types of tests identified. What types does lower K mean more likely to pick up ?}
+\todo{Discuss what the time taken. Get the data again using the specified K Value. Talk to roma about what type of graph to show the time taken}
+\todo{Calculate the significant differences ? }
+
+This implies that for some projects the calling context does not have to be particularly deep.
+
+
+
+\section{Parameter Comparison}
+\label{sec:param}
+Intuitively, taking into account for parameters of method calls would increase the time taken to calculate the level of redundancy due to the extra amount of data. However, parameters only add extra computation when the method execution of the given k is exactly the same. \todo{Should I describe this more?} A larger calling context would mean that it would be more difficult for two tests to match. Matching with a K value of three would be expected to be a rare occurrence in the scale of a benchmark. The parameters can be large and hold a lot of information therefore if the K value matches, then matching parameters may incur a large cost. Taking into account this extra information, it would make sense that the number of redundant tests identified would decrease, but the total time taken would increase. 
+
+Looking at the significant Table \ref{fig:paramgraph}, this matches what is expected to occur. For every benchmark, using parameters significantly increases the time taken. This may imply that the number of tests that match the K value of three was higher than expected, causing more computations to look at the parameter information.
+
+Every benchmark caused a significant decrease in the number of redundant test cases. This backs up the implication that there were more situations where a K depth of three matched than expected meaning that parameters had a significant effect on the redundant tests identified. 
+
+\todo{Test on Calling context = 2 ? Look at significant differences}
+
+\section{Weighting Comparison}
+\label{sec:weight}
+As previously discussed in \todo{section 2 and 3} many of the other papers encountered difficulties when test cases shared setup and teardown method calls, meaning that some of the methods picked up caused a high false - positive rate. Intuitively this makes sense when the test cases are small or the setup and teardown is large, meaning the setup and teardown methods make up a larger majority of the test calls. By taking the approach of removing a portion of the most executed method calls meant that the amount of data that would be compared decreases. This should reflect onto the results by showing a decrease in the time taken. The effect that it has on the number of redundant test cases should be dependent on the benchmark when weighting is used. This is because removing the most common tests should imply an decreased false-positive rate, but also may increase the number of actual redundant tests picked up. Therefore, depending on which on the two variables outweighs the other, will result in an increase or decrease in the number of redundant test cases identified.
+
+Looking at the results in Table \ref{weightingsig}, it shows there was a mixture of results in regard to the total time taken. Two out of the three benchmarks that significantly increased in total time were from the small benchmarks. This may imply that the size of the benchmark is related to the effect of that weighting has on the time taken. The reason is, weighting is calculated once for each test case at the start of the pipeline stage. This weighting calculation can take a varying length of time, depending on the number of test cases. Since the weighting is linear in relation to the number of test cases, however, the comparisons is factorial in relation to the test cases. This shows that calculating the weighting for smaller benchmarks may take more time than it saves. However, the goal of weighting is not to save time, but it is to reduce the number of false positives.
+
+Spring was the only benchmark that significantly increased the number of redundant test cases identified. The other benchmarks had a significant decrease. At first, this makes it appear that by using weighting it may solve some of the issues that were identified in \cite{koochakzadeh2009test} \cite{li2008static}. To confirm this, examining Table \ref{whileycoding} will give insight into the effect of weighting. Comparing the two columns, Pipeline 2 and Weighting it shows the only difference is a removal of the two limited redundancy test cases that were picked up by Pipeline 2. The weighting is able to remove the test cases that have similar set up and tear down methods, but fails to reduce the number of other redundancies. By removing the method executions that were common throughout the benchmarks, this lead to a decrease in false-positive tests identified.
+
+
+\section{Weighting and Parameter Comparison}
+
+The result from a combination of both, weighting and parameter would provide an interesting set of results. A combination of the weighting and parameters would be expected to be outcome. Looking at Table \ref{weightingparamsig}, it shows that it is nearly identical to the parameters table with the only exception being that the Imcache benchmark changed from significant increase in time to a significant decrease in time. This indicates that parameters may have a stronger effect on the final outcome \todo{Compare weighting to parameter in graph or something}. The reason that parameter may have a larger impact is due to the nature of the weighting. The weighting removes a set of method execution details, \todo{unsure on this next part}.
+
+If the premise that parameters impact outweigh that of weighting, then the results are what would be expected. 
+
+\section{Research Questions}
+
+\subsection{Can method execution details give a good overview of the level of test redundancy?}
+
+It is difficult to make a direct comparison between using statement information and higher level method execution details without implementing and comparing both on the same benchmarks. Therefore, the level of redundancy identified will be evaluated by the potential redundancy identified as well as the type of redundancies. It is important to take into consideration both. This is because knowing the number of tests is allows us to see how method executions handle different types of tests, unit vs end to end respectively. The potential redundancy gives us insight into the types of redundant tests identified, giving information on which types of test redundancy is easier to pick up and which is harder when using method execution.
+
+\todo{Suspect that method execution may not be good at unit tests}
+
+The use of method execution allows us to look at test cases that produce more information, in particular ones which are end to end tests (Whiley) which produce a large amount of data. It would be interesting to see the comparison between how much data statement information generates in comparison to method execution details. I hypothesize that statement coverage would give more accuracy in regard to determining whether two test cases are redundant or not but this would come at a cost of time and memory consumption.
+
+\todo{Talk about the ones that perform good and ones that perform bad. Is this performance a framework thing or test case issue. Is it to do with unit tests being hard to separate. Unit tests vs end to end. Should we use parameter and weighting ? Just Parameter? Just weighting?}
+
+\subsection{Can we improve the performance with weighting?}
+
+Weighting attempts to improve the accuracy of the redundancy by removing false-positives. An increase in performance refers to a reduction in the level of false positives identified. 
+
+\todo{Examine the coding tables, state that using weighting can help}
+
+\subsection{Can we improve the performance using parameters?}
+
+The answer to the question depends on the type of parameters that are used. Initially the only parameters that were being retrieved were the primitive types. The reason was due to the easy nature of retrieving the values of them. This lead to a less than expected outcome as the majority of parameters involved object types which contained the important information that could be used to increase the separability of tests. By using reflection to retrieve the fields of these objects allowed more insight into the content that the parameter objects were holding and the nature of them, but it also meant more data had to be held and analysed resulting in an increased time taken. There exists this trade off between time taken and confidence of redundancy when using parameters. The reason for running a framework such as this is to reduce the number of redundant test cases, therefore the majority of situations will prefer a higher confidence of redundancy over time taken. The answer is then to use reflection to retrieve the parameters, how ever is it worth it to use either?
+
+\todo{Examine the coding tables, state that using parameters improves performance}
+
+\subsection{Can Calling Trees we used to better identify redundant tests?}
+
+The result was unexpected. It showed that as the depth of the calling context increased, there was limited level of reduction in the number of redundant tests identified. Although there was a change, it was lower that what was expected. A possible reason for this was after a certain number of calling context, the tests that were going to be different, were already different and increasing the size of the calling tree did not affect it. This may imply that using a calling context depth of two is enough to generate a list of redundant tests similar to a depth of two.
+
+Using a calling tree allows for the analysing tool to better identify redundant tests as shown by the comparison above where the one, two and three calling sizes are compared.
+
+\subsection{How does pipelining impact the time taken?}
+
+Pipelining was one of the critical aspects of the project. It not only lead to a decrease in the time taken but also the memory consumed. Like calling trees, there is an optimal number of pipelines before they are causing a larger increase in time than they save. We can see in the results that each \todo{check results} benchmark responded differently to the length of the pipeline. This may have been due to not finding the optimal pipeline variables for the second pipeline causing a large number of comparisons still being needed to be done by the last pipeline. Another reasons may have been due to the nature of the tests where they were difficult to separate until you used more data such as a list or calling context. 
+
+\section{Justify your approach}
+
+
+
+
+\section{Critically evaluate your study}
+
+A major limitation to the study was volatile memory. For test suites such as Whiley, storing the parameter data and calling context endured a high level of volatile memory usage, limiting the amount of tests for Whiley that were able to be retrieved (Limited to valid tests). An approach that should have been considered with more thought was the use of a database. Although this introduced it's own issues such as running the analysis on a distributed system would have been increasingly difficult to replicate the condition for each run. 
+
+Some of the benchmarks that were chosen contain multiple unit tests within one test case. The framework described throughout the paper would not be able to pick up this kind of redundancy, if a test case contained two others, the frame work only looks at the total method set, and for each of the singular unit tests, they would match their proportion of the joined test case. This means that unless one of the unit tests was arbitrary larger than the other, something along the lines of 98:1 lines of code then it would not be picked up as being redundant. This is where the other approaches identified in Chapter \ref{C:related} would be more effective. By looking at the statement information, it is easier to determine when a test is a subset of another and have more confidence on it being a redundant test case in comparison to looking at solely the method execution details. 
