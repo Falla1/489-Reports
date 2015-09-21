@@ -1,0 +1,19 @@
+\chapter{Conclusions and Future Work}\label{C:future}
+
+\section{Future Work}
+\todo{It may be that a lot of tests subsume another rather than are redundant.}
+The project has explored the use of higher level information than previously explored for identifying redundant test cases while examining how pre processing and changing the depth of information retrieved can impact the results. Although the output of the framework is adequate in the sense that there is a low number of tests identified, where the developers can easily look over and remove them as they see fit. As discussed in Section \ref{sec:crit} one of the limitations is identifying when one test subsumes another. Using a statement coverage information with weighting would provide an interesting set of results. It would allow for several questions to be answered in regard to the performance of method execution vs statement information. The results would be expected to build off those achieved in Maurer et al. \cite{li2008static}  and Robinson et al. \cite{koochakzadeh2009test}. 
+
+One of the issues identified in Section \ref{sec:pipelineEva}, there was difficult identifying the best pipeline variables to use. In Section \todo{TODO} there are guidelines that are produced which were created based on the benchmarks size and types, although this would highly likely to not be universal. \todo{Finish if I produce guidelines.}
+
+Memory consumption hampered the number of test's that could be run for some of the benchmarks. To overcome this the use of a database could be employed. This would increase the time taken as it would be retrieving the data from non-volatile memory store, but would allow for an increased set of data to be examined, potentially using statement information and method execution data where the method execution data is used during the n-1 pipeline stages and the statement information is explored once the number of potential redundant tests is reduced. \todo{I feel this should be switched around. Combining the statement and method execution should start then why and how.}
+\\
+\todo{Database usage}\\
+
+
+\section{Conclusions}
+
+\todo{The use of method execution data seemed like a good candidate to identify matching tests} \\
+\todo{Weighting and parameters show potential in helping to limit the number of redundant test cases} \\
+\todo{Calling tree has limited effect beyond depth of 1 when by itself}
+\todo{Pipelining saved substantial time}
