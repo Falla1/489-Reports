@@ -1,0 +1,78 @@
+\chapter{Conclusions and Future Work}\label{C:future}
+
+\section{Future Work}
+\todo{It may be that a lot of tests subsume another rather than are redundant.}
+The project has explored the use of higher level information than previously explored for identifying redundant test cases while examining how pre processing and changing the depth of information retrieved can impact the results. Although the output of the framework is adequate in the sense that there is a low number of tests identified, where the developers can easily look over and remove them as they see fit. As discussed in Section \ref{sec:crit} one of the limitations is identifying when one test subsumes another. Using a statement coverage information with weighting would provide an interesting set of results. It would allow for several questions to be answered in regard to the performance of method execution vs statement information. The results would be expected to build off those achieved in Maurer et al. \cite{li2008static}  and Robinson et al. \cite{koochakzadeh2009test}. 
+\paragraph{}
+One of the issues identified in Section \ref{sec:pipelineEva}, there was difficult identifying the best pipeline variables to use. In Section \todo{TODO} there are guidelines that are produced which were created based on the benchmarks size and types, although this would highly likely to not be universal. \todo{Finish if I produce guidelines.}
+\paragraph{}
+Memory consumption hampered the number of test's that could be run for some of the benchmarks. To overcome this the use of a database could be employed. This would increase the time taken as it would be retrieving the data from non-volatile memory store, but would allow for an increased set of data to be examined, potentially using statement information and method execution data where the method execution data is used during the n-1 pipeline stages and the statement information is explored once the number of potential redundant tests is reduced. \todo{I feel this should be switched around. Combining the statement and method execution should start then why and how.}
+\\
+\todo{Database usage}\\
+
+
+\section{Conclusions}
+
+\todo{The use of method execution data seemed like a good candidate to identify matching tests} \\
+\todo{Weighting and parameters show potential in helping to limit the number of redundant test cases} \\
+\todo{Calling tree has limited effect beyond depth of 1 when by itself}
+\todo{Pipelining saved substantial time}
+
+\todo{Talk about framework}
+\todo{Talk about strategies}
+
+\begin{itemize}
+\item{Explore the use of method execution details}
+\item{The impact of weighting on performance}
+\item{The impact of parameters on performance}
+\item{The impact of calling context depth on performance}
+\item{The impact of pipelining the data on performance}
+\end{itemize}
+
+\subsection{Can method execution details give a good overview of the level of test redundancy?}
+
+It is difficult to make a direct comparison between using statement information and higher level method execution details without implementing and comparing both on the same benchmarks. Therefore, the level of redundancy identified will be evaluated by the potential redundancy identified as well as the type of redundancies. It is important to take into consideration both. Knowing the number of tests allows us to see how method executions handle different types of tests, unit vs end to end respectively. The potential redundancy gives us insight into the types of redundant tests identified, giving information on which types of test redundancy is easier to pick up and which is harder when using method execution.
+\paragraph{}
+The use of method execution allows us to look at test cases that produce a larger amount of total information, in particular ones which are end to end tests (Whiley) which produce a large amount of data. It would be interesting to see the comparison between statement information and method execution details. It appears to be intuitive that statement coverage would give more accuracy in regard to determining whether two test cases are redundant but this would come at a cost of time and memory consumption. What is the optimal trade-off for this situation? \todo{Maybe talk about it here?}
+\paragraph{}
+By using a higher abstraction of information, there appears to be no relation to the time taken and the number of redundant test cases with the two types of test cases, unit and end to end respectively.
+\paragraph{}
+Examining the Table \ref{whileycoding} and \ref{metriccoding}, allows for an comparison to identify the difference between end to end tests and unit tests while using method execution details. It appears that the types of the tests may react differently to the settings used. For the end to end test of Whiley, where the size of a single test case is larger than Metric-x, it appears to respond to the use of parameters and weighting in a positive manner. Where the tests that are picked up as limited redundancy by the Pipeline 2 are both removed when weighting and parameters are used. In comparison to the unit test case. The unit test appeared to not respond either to weighting or parameters by identifying tests that had limited redundancy. When combining both of these, it removed the tests that were identified, but had limited redundancy. \todo{Explain why it might be happening} This may reflect on the amount of pre processing and information needed for the different types to get identified. \todo{This would mean that the larger bench marks can be analysed faster ?}
+
+
+\subsection{Can we improve the overall performance with weighting?}
+\todo{More}
+Weighting attempts to improve the accuracy of the redundancy by removing false-positives while improving the time taken to analyse. 
+
+\todo{Examine the coding tables, state that using weighting can help}
+
+\subsection{Can we improve the performance using parameters?}
+
+The answer to the question depends on the type of parameters that are used. Initially the only parameters that were being retrieved were the primitive types. The reason was due to the easy nature of retrieving the values of them. This lead to a less than expected outcome as the majority of parameters involved object types which contained the important information that could be used to increase the separability of tests. By using reflection to retrieve the fields of these objects allowed more insight into the content that the parameter objects were holding and the nature of them, but it also meant more data had to be held and analysed resulting in an increased time taken. There exists this trade off between time taken and confidence of redundancy when using parameters. The reason for running a framework such as this is to reduce the number of redundant test cases, therefore the majority of situations will prefer a higher confidence of redundancy over time taken. The answer is then to use reflection to retrieve the parameters.
+
+\todo{Examine the coding tables, state that using parameters improves performance}
+
+\subsection{Can Calling Trees we used to better identify redundant tests?}
+
+The result was unexpected. It showed that as the depth of the calling context increased, there was limited level of reduction in the number of redundant tests identified. Although there was a change, it was lower that what was expected. A possible reason for this was after a certain number of calling context, the tests that were going to be different, were already different and increasing the size of the calling tree did not affect it. This may imply that using a calling context depth of two is enough to generate a list of redundant tests similar to a depth of two. \todo{Todo check with K Length Comparison - might be talking about same things}
+\paragraph{}
+Using a calling tree allows for the analysing tool to better identify redundant tests as shown by the comparison above where the one, two and three calling sizes are compared.
+
+\subsection{How does pipelining impact the time taken?}
+
+Pipelining was one of the critical aspects of the project. It not only lead to a decrease in the time taken but also the memory consumed. Like calling trees, there is an optimal number of pipelines before they are causing a larger increase in time than they save. We can see in the results that each \todo{check results} benchmark responded differently to the length of the pipeline. This may have been due to not finding the optimal pipeline variables for the second pipeline causing a large number of comparisons still being needed to be done by the last pipeline. Another reasons may have been due to the nature of the tests where they were difficult to separate until you used more data such as a list or calling context. 
+
+\todo{Maybe guidelines for the settings that each type of test should use?}
+
+\section{Justify your approach}
+
+\todo{Unsure if I should put anything ehre}
+
+
+\section{Critically evaluate your study}
+\label{sec:crit}
+A major limitation to the study was volatile memory. For test suites such as Whiley, storing the parameter data and calling context endured a high level of volatile memory usage, limiting the amount of tests for Whiley that were able to be retrieved (Limited to valid tests). An approach that should have been considered with more thought was the use of a database. Although this would have introduced difficulty reducing the non-deterministic behaviour to a minimum. A major factor would be the difficulty around executing the analysis on a distributed system and replicating the conditions each run.
+\paragraph{}
+Some of the benchmarks that were chosen contain multiple unit tests within one test case. The framework described throughout this paper would not be able to pick up when a test case subsumes another. The frame work only looks at the total method set, and for each of the singular unit tests, there would need to be a skewed proportion of the conjoined test case in regard to the total method executions. This means that unless one of the unit tests within the conjoined test case was arbitrary larger than the other, roughly 98:1 lines of code then it would not be picked up as being redundant, unless there was another conjoined test case similar. This is where the other approaches identified in Chapter \ref{C:related} would be more effective. By looking at the statement information, it is easier to determine when a test is a subset of another and have more confidence on it being a redundant test case in comparison to looking at solely the method execution details. \todo{Need to explain this better.}
+\paragraph{}
+As discussed in Section \ref{sec:pipelineEva}, some benchmarks performed better with a two stage pipeline in comparison to a three stage, and vice versa. This may have been due to not being able to identify the optimal parameters for each benchmark, although there were multiple different parameters tested to explore each benchmark's optimal. \todo{Maybe explore how I decided the optimal ?}
