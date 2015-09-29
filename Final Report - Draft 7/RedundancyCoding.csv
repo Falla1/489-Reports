@@ -1,0 +1,10 @@
+,Metric-X,,,
+Types of redundancy,Pipeline 2,Weighting,Parameters,Parameters  And Weighting
+Different Parameter Value,52,10,8,4
+Different Object Type,6,2,2,0
+Different Array Values,8,6,4,6
+Similar,2,2,0,0
+Limited Redundancy,8,4,6,0
+,,,,
+,,,,
+Total,76,24,20,10
