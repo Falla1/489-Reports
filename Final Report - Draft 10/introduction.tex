@@ -1,0 +1,31 @@
+\chapter{Introduction}\label{C:intro}
+
+Test suites are an important part in every major software project \cite{jeffrey2005test}. They check a specified set of behaviours are met by a software program. Meeting the behaviours increases confidence in the program, but as a consequence, a large number of tests need to be executed and may take up to several hours to run.
+
+Test cases are added to the test suite throughout the project, often when a piece of code is altered, new code is developed or a bug gets fixed \cite{issuetrack,whentotest}. With tests being added throughout, we need to ensure that the thousandth test case is not replicating the behaviour of any of the previous. Even with careful planning, it is difficult to have no redundant test cases. A redundant test case is one which is replicating the behaviour of another.  The goal of the report is to create a tool to identify these test cases within a test suite.
+
+The execution of a test case leaves a trail of data. This trail contains information ranging from low level to high level run time data. A low level example would be use machine code while a high level could be the method execution data. A variety of previous research \cite{wong1995effect, wong1999test, rothermel1998empirical, rothermel2002empirical,koochakzadeh2009test,zhang2011empirical,li2008static} discuss using some of this information to identify redundant test cases. The papers identify redundant tests using statement coverage while the majority examine benchmarks with under 1,000 test cases. For benchmarks with a large number of test cases storing every statement execution could be costly. Therefore our report investigates using method execution data to identify redundant test cases. One of the issues that previous studies reported were high level of false positives. Method execution data gives a few different ways to explore this issue which are explored further on. 
+
+The tool developed can analyse method execution details, known as \textit{test spectra}, to determine the level of redundancy between two tests. Using this analysed information, potentially redundant test cases can be displayed to the developers. A basic visualisation of the idea is shown in Figure \ref{fig:spectra}, the spectra is three different tests where colours represent method executions. Intuitively, it is clear that Test 1 is different from Test 2 and 3 as the method executions is different between them. However, there are similarities between Test 2 and 3 which could identify some level of redundancy between the test cases. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm,height=3cm]{spectra.png}
+\caption{A figurative spectra where each colour represents different method execution details. We see similarities between Test 2 and 3. In contrast, Test 1 is different from 2 and 3. }
+\label{fig:spectra}
+\end{figure}
+
+Once the tests are identified as being redundant, they may be removed, however it is important to understand the dangers of removing test cases. Unless two test cases are exactly the same, it is difficult to guarantee that they are redundant, even if one subsumes another. This creates the need to be able to use different techniques, dependent on the project. Therefore to expand on the goal of the project, the developed tool should give developers different approaches for identifying redundant test cases. The tool should allow a developer to configure different analysis metrics and view the results in a file. Overall, the tool is useful for gaining an overview and understanding of the condition of the test suite, allowing for manual inspection to determine if the identified redundant tests should be removed.
+
+Another potential use case of the tool is to redistribute the test cases. This can be achieved by splitting the non redundant tests into another test suite and running this suite in place of the original. The original test suite may be run over night when no development is occurring. This separation of tests based on redundancy allows for testing process, for example regression testing, to occur in a more timely fashion while ensuring the original bug finding ability is retained. This is applicable to David Pearce, he is currently writing a language called Whiley. The language contains an extended static checking tool in order to eliminate run time exceptions through formal verification techniques. In the main compiler module alone, there are roughly 20,000 tests. Relocating a number of these tests into another suite would result in allowing him to increase development speed due to a reduction in the time taken to run a large test suite. Increasing the frequency of test suite execution also allows for bugs to be traced back to code changes easier and reduces the time spent debugging. Therefore, by redistributing the test suite, not only does the time taken to run a test suite decrease, there is incentive to developers to execute the suite more often and in turn helping them reduce time taken to debug.
+
+The contributions of the report is split into two sections: 
+
+\begin{itemize}
+\item Create a tool for identifying redundant test cases
+\item Analyse different strategies for identifying redundant test cases through experimenting on realistic benchmarks
+\end{itemize}
+
+\section{Outline}
+
+The report is structured as follows. Chapter 2 discusses background information that explores concepts needed to understand the following chapters as well as previous research in this area of interest. The design and implementation of the tool is then examined in Chapter 3. After the tool is discussed, Chapter 4 investigates the different techniques explored and conducts and analyses experiments. Finally, Chapter 5 concludes the report and identifies future work.
