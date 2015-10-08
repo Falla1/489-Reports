@@ -1,0 +1,33 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A figurative spectra where each colour represents different method execution details. We see similarities between Test 2 and 3. In contrast, Test 1 is different from 2 and 3. }}{2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The coverage of each test is shown by a circle. It shows that T4 and T5 are redundant as T3 already covers those statements.}}{8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A diagram showing the three different variations of Call Graph information. Where each have a varying level of information that is stored.}}{10}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A simplified point cut within AspectJ. The first {\color {red}\sout {pointcut }}{\color {blue}\uwave {point cut }}is for when a new test is executed and the second when a new method is executed.}}{19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An example showing how Monge \& Elkan split the method calls into token, where Levenshtein represents the method calls as a whole.}}{21}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces {\color {blue}\uwave {Trace information goes in at the start of the pipeline. After each stage there should be a reduction of comparisons that the next stage has to complete. The last stage should be the most computationally heavy.}}}}{22}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces {\color {blue}\uwave {A diagram showing how the different size of the test case can be affected by setup and teardown methods.}}}}{24}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A figure showing the effect that using pipelines has on the number of comparisons that the final stage (Most computationally heavy) has to do.}}{28}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces {\color {blue}\uwave {The circle size represents the data that is left in the pipeline. The figure shows that the difference that is between a two stage pipeline and a three stage only has limited room for a reduction in test cases identified. This shows that the time taken to run the extra pipeline costs more than it saves.}}}}{30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A figure showing the effect that a change in the depth of the calling context has on the number of redundant tests are identified.}}{31}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A figure showing the effect that using parameters has on the number of redundant tests are identified.}}{32}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A figure showing the effect that using weighting has on the number of redundant tests are identified.}}{34}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A figure showing the effect that using weighting and parameters has on the number of redundant tests are identified.}}{37}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces A figure showing the relationship that using different pipeline sizes has on the total time taken to analyse the data.}}{46}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces A figure showing the relationship that using a different K Depth has on the total time taken to analyse the data.}}{47}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces A figure showing the relationship that using parameters has on the total time taken to analyse the data.}}{49}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces A figure showing the relationship that using weighting has on the total time taken to analyse the data.}}{51}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces A figure showing the relationship that using weighting and parameters combined has on the total time taken to analyse the data.}}{53}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {F.1}{\ignorespaces A figure showing the relationship that using weighting and parameters combined vs parameters alone has on the total time taken to analyse the data.}}{55}

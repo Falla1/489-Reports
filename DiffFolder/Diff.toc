@@ -1,0 +1,93 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}{\color {red}\sout {Background}}}{5}
+\contentsline {section}{\numberline {1.1}{\color {blue}\uwave {Outline}}}{5}
+\contentsline {section}{\numberline {1.2}{\color {red}\sout {Tracing}}}{5}
+\contentsline {section}{\numberline {1.2}{\color {red}\sout {Performance Evaluation}}}{5}
+\contentsline {chapter}{\numberline {2}{\color {blue}\uwave {Background}}}{7}
+\contentsline {section}{\numberline {2.1}{\color {red}\sout {Grid Computing}}}{7}
+\contentsline {section}{\numberline {2.1}Related Work}{7}
+\contentsline {subsection}{\numberline {2.1.1}{\color {blue}\uwave {Identifying Redudant Tests}}}{7}
+\contentsline {subsection}{\numberline {2.1.2}{\color {blue}\uwave {Calling Context}}}{9}
+\contentsline {subsection}{\numberline {2.1.3}{\color {blue}\uwave {Edit Distance Metrics}}}{10}
+\contentsline {subsection}{\numberline {2.1.4}{\color {blue}\uwave {Wilcoxon Signed Rank Test}}}{11}
+\contentsline {chapter}{\numberline {3}{\color {red}\sout {Design and Implementation}}}{13}
+\contentsline {section}{\numberline {2.1}{\color {red}\sout {Overview}}{\color {blue}\uwave {Performance Evaluation}}}{13}
+\contentsline {section}{\numberline {2.2}{\color {red}\sout {Tool}}}{13}
+\contentsline {subsection}{\numberline {2.1.1}{\color {red}\sout {Pipeline}}}{13}
+\contentsline {subsection}{\numberline {2.1.1}{\color {red}\sout {Time reduction}}}{14}
+\contentsline {subsubsection}{{\color {red}\sout {Heuristic}}}{14}
+\contentsline {section}{\numberline {2.2}{\color {blue}\uwave {Grid Computing}}}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {chapter}{\numberline {3}{\color {blue}\uwave {Design and Implementation}}}{17}
+\contentsline {subsubsection}{{\color {red}\sout {Concurrent}}}{17}
+\contentsline {section}{\numberline {3.1}{\color {blue}\uwave {Overview}}}{17}
+\contentsline {subsection}{\numberline {3.1.1}{\color {red}\sout {Saving to the Network}}}{17}
+\contentsline {section}{\numberline {3.2}Tracing}{17}
+\contentsline {subsection}{\numberline {3.2.1}{\color {red}\sout {Parameter Values}}}{18}
+\contentsline {section}{\numberline {3.3}Test Spectra}{19}
+\contentsline {subsection}{\numberline {3.3.1}{\color {red}\sout {Set}}{\color {blue}\uwave {Unique Method Calls}}}{19}
+\contentsline {subsection}{\numberline {3.3.2}{\color {red}\sout {List}}{\color {blue}\uwave {Every Method Call}}}{20}
+\contentsline {subsection}{\numberline {3.3.3}Calling Context}{20}
+\contentsline {section}{\numberline {3.4}Analysis Metrics}{20}
+\contentsline {section}{\numberline {3.5}{\color {blue}\uwave {Pipeline}}}{22}
+\contentsline {paragraph}{{\color {blue}\uwave {Comparison 1}}}{22}
+\contentsline {paragraph}{{\color {blue}\uwave {Comparison 2}}}{22}
+\contentsline {paragraph}{}{22}
+\contentsline {subsection}{\numberline {3.5.1}{\color {blue}\uwave {Saving to the Network}}}{23}
+\contentsline {section}{\numberline {3.6}{\color {blue}\uwave {Tracing Parameter Values}}}{23}
+\contentsline {section}{\numberline {3.7}Weighting}{23}
+\contentsline {chapter}{\numberline {4}Results and Discussion}{25}
+\contentsline {section}{\numberline {4.1}Method}{25}
+\contentsline {section}{\numberline {4.2}Environmental Methodologies}{25}
+\contentsline {subsection}{\numberline {4.2.1}Grid Computing}{25}
+\contentsline {subsection}{\numberline {4.2.2}Measuring Time}{26}
+\contentsline {subsubsection}{Heap Size}{26}
+\contentsline {subsection}{\numberline {4.2.3}Software Environment}{26}
+\contentsline {section}{\numberline {4.3}Benchmarks}{26}
+\contentsline {section}{\numberline {4.4}Experiment \uppercase {i\relax } - Pipeline Length Comparison}{27}
+\contentsline {subsection}{\numberline {4.4.1}Motivation}{27}
+\contentsline {subsection}{\numberline {4.4.2}Settings}{27}
+\contentsline {subsection}{\numberline {4.4.3}Results}{27}
+\contentsline {subsection}{\numberline {4.4.4}Discussion}{28}
+\contentsline {section}{\numberline {4.5}Experiment \uppercase {ii\relax } - K Depth Comparison}{29}
+\contentsline {subsection}{\numberline {4.5.1}Motivation}{29}
+\contentsline {subsection}{\numberline {4.5.2}Settings}{29}
+\contentsline {subsection}{\numberline {4.5.3}Results}{30}
+\contentsline {subsection}{\numberline {4.5.4}Discussion}{30}
+\contentsline {section}{\numberline {4.6}Experiment \uppercase {iii\relax } - Parameter Comparison}{31}
+\contentsline {subsection}{\numberline {4.6.1}Motivation}{31}
+\contentsline {subsection}{\numberline {4.6.2}Settings}{31}
+\contentsline {subsection}{\numberline {4.6.3}Results}{32}
+\contentsline {subsection}{\numberline {4.6.4}Discussion}{32}
+\contentsline {section}{\numberline {4.7}Experiment \uppercase {iv\relax } - Weighting Comparison}{33}
+\contentsline {subsection}{\numberline {4.7.1}Motivation}{33}
+\contentsline {subsection}{\numberline {4.7.2}Settings}{33}
+\contentsline {subsection}{\numberline {4.7.3}Results}{34}
+\contentsline {subsection}{\numberline {4.7.4}Discussion}{35}
+\contentsline {section}{\numberline {4.8}Experiment \uppercase {v\relax } - Weighting and Parameter Comparison}{35}
+\contentsline {subsection}{\numberline {4.8.1}Motivation}{35}
+\contentsline {subsection}{\numberline {4.8.2}Settings}{36}
+\contentsline {subsection}{\numberline {4.8.3}Results}{36}
+\contentsline {subsection}{\numberline {4.8.4}Discussion}{36}
+\contentsline {section}{\numberline {4.9}Redundant Test Case Coding}{37}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{39}
+\contentsline {section}{\numberline {5.1}Future Work}{39}
+\contentsline {section}{\numberline {5.2}Conclusions}{39}
+\contentsline {subsection}{\numberline {5.2.1}Can method execution details give a good overview of the level of test redundancy?}{40}
+\contentsline {subsection}{\numberline {5.2.2}Can we improve the overall performance with weighting?}{40}
+\contentsline {subsection}{\numberline {5.2.3}Can we improve the performance using parameters?}{41}
+\contentsline {subsection}{\numberline {5.2.4}Can Calling Trees we used to better identify redundant tests?}{41}
+\contentsline {subsection}{\numberline {5.2.5}How does pipelining impact the time taken?}{41}
+\contentsline {section}{\numberline {5.3}Justify your approach}{41}
+\contentsline {section}{\numberline {5.4}Critically evaluate your study}{42}
+\contentsline {chapter}{Appendices}{43}
+\contentsline {chapter}{\numberline {A}The effect of pipeline size in regard to the time taken}{45}
+\contentsline {chapter}{\numberline {B}{\color {red}\sout {Pipeline linear scaling}}}{46}
+\contentsline {chapter}{\numberline {B}The effect of K Depth in regard to the time taken}{47}
+\contentsline {chapter}{\numberline {C}The effect of parameters in regard to the time taken}{49}
+\contentsline {chapter}{\numberline {D}The effect of weighting in regard to the time taken}{51}
+\contentsline {chapter}{\numberline {E}The effect of weighting and parameters combined in regard to the time taken}{53}
+\contentsline {chapter}{\numberline {F}The effect of weighting and parameters vs parameters in regard to the time taken}{55}
