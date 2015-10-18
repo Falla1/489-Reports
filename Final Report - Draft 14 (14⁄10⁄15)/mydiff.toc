@@ -1,0 +1,73 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Outline}{2}
+\contentsline {chapter}{\numberline {2}Background}{3}
+\contentsline {section}{\numberline {2.1}Related Work}{3}
+\contentsline {subsection}{\numberline {2.1.1}Identifying {\color {red}\sout {Redudant }}{\color {blue}\uwave {Redundant }}Tests}{3}
+\contentsline {subsection}{\numberline {2.1.2}Calling Tree}{5}
+\contentsline {subsection}{\numberline {2.1.3}Edit Distance Metrics}{5}
+\contentsline {subsection}{\numberline {2.1.4}Wilcoxon Signed Rank Test}{7}
+\contentsline {section}{\numberline {2.2}Performance Evaluation}{7}
+\contentsline {section}{\numberline {2.3}Grid Computing}{8}
+\contentsline {chapter}{\numberline {3}Design and Implementation}{9}
+\contentsline {section}{\numberline {3.1}Overview}{9}
+\contentsline {section}{\numberline {3.2}Tracing}{9}
+\contentsline {subsection}{\numberline {3.2.1}{\color {blue}\uwave {Saving to the Network}}}{10}
+\contentsline {section}{\numberline {3.3}Filtering By Spectra }{10}
+\contentsline {subsection}{\numberline {3.3.1}Unique Method Calls}{11}
+\contentsline {subsection}{\numberline {3.3.2}All Method Calls}{11}
+\contentsline {subsection}{\numberline {3.3.3}Call Tree}{12}
+\contentsline {section}{\numberline {3.4}Analysis Metrics}{12}
+\contentsline {section}{\numberline {3.5}Pipeline }{13}
+\contentsline {paragraph}{Pipeline Stage 1}{14}
+\contentsline {paragraph}{Pipeline Stage 2}{14}
+\contentsline {subsection}{\numberline {3.5.1}{\color {red}\sout {Saving to the Network}}}{14}
+\contentsline {section}{\numberline {3.6}Tracing Parameter Values}{15}
+\contentsline {section}{\numberline {3.7}Weighting }{16}
+\contentsline {section}{\numberline {3.8}{\color {blue}\uwave {Summary}}}{16}
+\contentsline {chapter}{\numberline {4}Results and Discussion}{19}
+\contentsline {section}{\numberline {4.1}Experimental Method}{19}
+\contentsline {section}{\numberline {4.2}Environmental Methodologies}{19}
+\contentsline {subsection}{\numberline {4.2.1}Grid Computing}{20}
+\contentsline {subsection}{\numberline {4.2.2}Measuring Time }{20}
+\contentsline {subsubsection}{Heap Size}{20}
+\contentsline {subsection}{\numberline {4.2.3}Software Environment}{20}
+\contentsline {section}{\numberline {4.3}Benchmarks}{20}
+\contentsline {section}{\numberline {4.4}Experiment \uppercase {i\relax } - Pipeline Length Comparison }{22}
+\contentsline {subsection}{\numberline {4.4.1}Motivation}{22}
+\contentsline {subsection}{\numberline {4.4.2}Settings}{22}
+\contentsline {subsection}{\numberline {4.4.3}Results}{22}
+\contentsline {subsection}{\numberline {4.4.4}Discussion}{22}
+\contentsline {section}{\numberline {4.5}Experiment \uppercase {ii\relax } - K Depth Comparison}{24}
+\contentsline {subsection}{\numberline {4.5.1}Motivation}{24}
+\contentsline {subsection}{\numberline {4.5.2}Settings}{24}
+\contentsline {subsection}{\numberline {4.5.3}Results}{25}
+\contentsline {subsection}{\numberline {4.5.4}Discussion}{25}
+\contentsline {section}{\numberline {4.6}Experiment \uppercase {iii\relax } - Parameter Comparison}{26}
+\contentsline {subsection}{\numberline {4.6.1}Motivation}{26}
+\contentsline {subsection}{\numberline {4.6.2}Settings}{27}
+\contentsline {subsection}{\numberline {4.6.3}Results}{28}
+\contentsline {subsection}{\numberline {4.6.4}Discussion}{28}
+\contentsline {section}{\numberline {4.7}Experiment \uppercase {iv\relax } - Weighting Comparison}{29}
+\contentsline {subsection}{\numberline {4.7.1}Motivation}{29}
+\contentsline {subsection}{\numberline {4.7.2}Settings}{30}
+\contentsline {subsection}{\numberline {4.7.3}Results}{30}
+\contentsline {subsection}{\numberline {4.7.4}Discussion}{30}
+\contentsline {section}{\numberline {4.8}Redundant Test Case Coding}{31}
+\contentsline {section}{\numberline {4.9}Limitations}{32}
+\contentsline {section}{\numberline {4.10}{\color {red}\sout {Summary}}}{33}
+\contentsline {chapter}{\numberline {5}Future Work and Conclusions}{35}
+\contentsline {section}{\numberline {5.1}Future Work}{35}
+\contentsline {section}{\numberline {5.2}Conclusions}{36}
+\contentsline {paragraph}{Method Call Information}{36}
+\contentsline {paragraph}{Pipeline}{36}
+\contentsline {paragraph}{Call tree depth}{36}
+\contentsline {paragraph}{Parameter}{37}
+\contentsline {paragraph}{Weighting}{37}
+\contentsline {subsection}{\numberline {5.2.1}{\color {red}\sout {Conclusion}}}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {chapter}{Appendices}{39}
+\contentsline {chapter}{\numberline {A}The effect of pipeline size in regard to the time taken}{41}
+\contentsline {chapter}{\numberline {B}The effect of parameters in regard to the time taken}{43}
+\contentsline {chapter}{\numberline {C}The effect of weighting in regard to the time taken}{45}
+\contentsline {chapter}{\numberline {D}The effect of weighting and parameters combined in regard to the time taken}{47}
+\contentsline {chapter}{\numberline {E}The effect of weighting and parameters vs parameters in regard to the time taken}{49}

@@ -1,0 +1,47 @@
+\chapter{Future Work and Conclusions}\label{C:future}
+
+This chapter will first discuss potential future work. The work will be aimed at increasing the tools ability to identify redundant tests. The experiments are then reflected on and finally concluded. 
+
+\section{Future Work}
+Throughout the project, three main areas have been identified for future work: The ability to handle larger test suites, tracing statement information and lastly, using both statement and method information together.
+
+\begin{itemize}
+
+\item \textbf{Handle larger test suites.} The main objective would be to increase the ability of the tool to handle larger test suites. Currently, the tool relies on RAM to hold the trace and analysis information however, the amount of data held can often grow rapidly. A similar tool was implemented by Nelson \cite{nelson2012profiling} while profiling execution data. The approach would allow the tool to handle arbitrary large suites. The down side would that the speed of the tool would decrease as the read/write to disk is slower than to RAM. This may be negligible as databases optimize their read and write by using a certain amount of memory. Giving developers this option would increases the capability of the tool. 
+
+\item \textbf{Trace statement information.} The tool has the ability to trace method call information and has potential to be used on large test suites. This approach may not be the best when we are only looking at smaller test suites. Another approach that could be implemented is tracing the statement coverage information. This would allow us to compare the statement and method coverage information directly and give us more insight into the issue of identifying redundant tests. Tracing the statement information would allow us to further explore the use case mentioned in Chapter \ref{C:intro}. The use case was the ability to split the test suites into two, one containing the non redundant test cases and the other was the original suite. This could be further expanded with statement coverage information. By identifying when a test subsumes another, the test subsumed could be moved into another suite. If the larger test fails, the subsumed tests could then be ran to help pin point the error in the code.
+
+\item \textbf{Combining Statement and method information.} The method call information was a good heuristic to use. On the other hand, it is difficult to judge how good method calls are at identifying redundant test cases without any comparison to statement coverage or large scale redundancy and bugs added. One application could be to combine the statement and method information together. The tool could use the method information as a heuristic and statement coverage could then explore the test cases identified by the heuristic.
+
+\end{itemize}
+
+\section{Conclusions}
+
+There were two main contributions of the paper as discussed in Chapter \ref{C:intro}:
+
+\begin{itemize}
+\item Create a tool for identifying redundant test cases (Chapter 3)
+\item Analyse different strategies for identifying redundant test cases through experimenting on realistic benchmarks (Chapter 4)
+\end{itemize}
+
+Throughout the report, the tool has been discussed along with the different techniques implemented. The tool first had to trace the data. This was achieved through the AspectJ framework. After the test suites were able to be traced, the trace information then had to be filtered with different spectra. The ability to filter out information was one of the key features of the tool. This allowed developers to trace information, then run a range of different filters over the data without being constrained to one spectra. The three spectrum filters were ``unique method calls", ``all method calls" and ``call tree". The other key feature of the tool was the pipeline. Integrating it with the spectra filters allowed for the ``unique method calls" to be used as a heuristic to reduce the number of comparisons that the subsequent stages had to perform. The tool then was altered to trace the parameter information from the test cases. This was achieved by using reflection on the parameter objects. Finally, the ability to apply a weighting was implemented. This was achieved by removing the top 20\% method calls.
+
+\paragraph{Method Call Information}
+The use of method call information was a good candidate to identify redundant tests. They allow the tool to look at test suites that produce a larger amount of total information, in particular ones which are end to end tests -- Whiley and Jasm. As mentioned in the Future Work section above and discussed in Experiment \rom{2}, the method calls appeared to be particularly good at being used as a heuristic. Filtering with the ``unique method calls" spectrum, the tool was able to remove a large portion of the test case comparisons in the final stage had to perform while retaining good precision.
+
+\paragraph{Pipeline}
+Pipelining was one of the critical aspects of the project. It not only lead to a decrease in the time taken but also the memory consumed. An important thing to note is each benchmark had an optimal length of the pipeline, using a length larger than the optimal caused more time to be taken to analyse than was saved. Pipelining particularly worked well with the use of a ``unique method call" spectrum filter.
+
+\paragraph{Call tree depth}
+The experiments showed that as the depth of the call tree increased, there was limited level of reduction in the number of redundant tests identified. This result was unexpected. Although there was a change, it was lower that what was expected. This implies that by increasing the K depth without any other technique, there is limited improvement. 
+
+\paragraph{Parameter}
+By using reflection to retrieve the fields of these objects it allowed more insight into the content that the parameter objects were holding and the nature of them, but it also meant more data had to be held and analysed resulting in an increased time taken. There exists this trade off between time taken and confidence of redundancy when using parameters. 
+
+\paragraph{Weighting}
+The weighting technique implemented attempts to improve the accuracy of the tool by removing false-positives while improving the time taken to analyse. Experiment \rom{4} discussed how weighting was able to reduce the level of false-positives but needs further improvement.
+
+\paragraph{}
+The project has explored the use of higher level information than previously explored for identifying redundant test cases while examining how different techniques can impact the results. The output of the tool is adequate in the sense that there is a low number of tests identified and these tests contain limited non-redundant tests. 
+
+

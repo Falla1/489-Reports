@@ -1,0 +1,70 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Outline}{2}
+\contentsline {chapter}{\numberline {2}Background}{3}
+\contentsline {section}{\numberline {2.1}Related Work}{3}
+\contentsline {subsection}{\numberline {2.1.1}Identifying Redudant Tests}{3}
+\contentsline {subsection}{\numberline {2.1.2}Calling Tree}{5}
+\contentsline {subsection}{\numberline {2.1.3}Edit Distance Metrics}{5}
+\contentsline {subsection}{\numberline {2.1.4}Wilcoxon Signed Rank Test}{7}
+\contentsline {section}{\numberline {2.2}Performance Evaluation}{7}
+\contentsline {section}{\numberline {2.3}Grid Computing}{8}
+\contentsline {chapter}{\numberline {3}Design and Implementation}{9}
+\contentsline {section}{\numberline {3.1}Overview}{9}
+\contentsline {section}{\numberline {3.2}Tracing}{9}
+\contentsline {section}{\numberline {3.3}Filtering By Spectra \improvement {Dave}}{10}
+\contentsline {subsection}{\numberline {3.3.1}Unique Method Calls}{11}
+\contentsline {subsection}{\numberline {3.3.2}All Method Calls}{11}
+\contentsline {subsection}{\numberline {3.3.3}Call Tree}{11}
+\contentsline {section}{\numberline {3.4}Analysis Metrics \improvement {Dave}}{12}
+\contentsline {section}{\numberline {3.5}Pipeline \improvement {Dave}}{13}
+\contentsline {paragraph}{Pipeline Stage 1}{13}
+\contentsline {paragraph}{Pipeline Stage 2}{14}
+\contentsline {subsection}{\numberline {3.5.1}Saving to the Network}{14}
+\contentsline {section}{\numberline {3.6}Tracing Parameter Values}{15}
+\contentsline {section}{\numberline {3.7}Weighting \improvement {Dave}}{15}
+\contentsline {chapter}{\numberline {4}Results and Discussion}{17}
+\contentsline {section}{\numberline {4.1}Experimental Method}{17}
+\contentsline {section}{\numberline {4.2}Environmental Methodologies}{17}
+\contentsline {subsection}{\numberline {4.2.1}Grid Computing}{18}
+\contentsline {subsection}{\numberline {4.2.2}Measuring Time \improvement {Dave}}{18}
+\contentsline {subsubsection}{Heap Size}{18}
+\contentsline {subsection}{\numberline {4.2.3}Software Environment}{18}
+\contentsline {section}{\numberline {4.3}Benchmarks}{18}
+\contentsline {section}{\numberline {4.4}Experiment \uppercase {i\relax } - Pipeline Length Comparison \improvement {Dave}}{20}
+\contentsline {subsection}{\numberline {4.4.1}Motivation}{20}
+\contentsline {subsection}{\numberline {4.4.2}Settings}{20}
+\contentsline {subsection}{\numberline {4.4.3}Results}{20}
+\contentsline {subsection}{\numberline {4.4.4}Discussion}{21}
+\contentsline {section}{\numberline {4.5}Experiment \uppercase {ii\relax } - K Depth Comparison}{22}
+\contentsline {subsection}{\numberline {4.5.1}Motivation}{22}
+\contentsline {subsection}{\numberline {4.5.2}Settings}{23}
+\contentsline {subsection}{\numberline {4.5.3}Results}{23}
+\contentsline {subsection}{\numberline {4.5.4}Discussion}{23}
+\contentsline {section}{\numberline {4.6}Experiment \uppercase {iii\relax } - Parameter Comparison}{25}
+\contentsline {subsection}{\numberline {4.6.1}Motivation}{25}
+\contentsline {subsection}{\numberline {4.6.2}Settings}{26}
+\contentsline {subsection}{\numberline {4.6.3}Results}{26}
+\contentsline {subsection}{\numberline {4.6.4}Discussion}{26}
+\contentsline {section}{\numberline {4.7}Experiment \uppercase {iv\relax } - Weighting Comparison}{27}
+\contentsline {subsection}{\numberline {4.7.1}Motivation}{27}
+\contentsline {subsection}{\numberline {4.7.2}Settings}{28}
+\contentsline {subsection}{\numberline {4.7.3}Results}{28}
+\contentsline {subsection}{\numberline {4.7.4}Discussion}{28}
+\contentsline {section}{\numberline {4.8}Redundant Test Case Coding}{29}
+\contentsline {section}{\numberline {4.9}Limitations\improvement {Dave}}{30}
+\contentsline {section}{\numberline {4.10}\improvement {Summary?}Summary}{31}
+\contentsline {chapter}{\numberline {5}Future Work and Conclusions\improvement {Dave}}{33}
+\contentsline {section}{\numberline {5.1}Future Work}{33}
+\contentsline {section}{\numberline {5.2}Conclusions}{34}
+\contentsline {paragraph}{Method Call Information}{34}
+\contentsline {paragraph}{Pipeline}{34}
+\contentsline {paragraph}{Call tree depth}{34}
+\contentsline {paragraph}{Parameter}{35}
+\contentsline {paragraph}{Weighting}{35}
+\contentsline {subsection}{\numberline {5.2.1}Conclusion}{35}
+\contentsline {chapter}{Appendices}{37}
+\contentsline {chapter}{\numberline {A}The effect of pipeline size in regard to the time taken}{39}
+\contentsline {chapter}{\numberline {B}The effect of parameters in regard to the time taken}{41}
+\contentsline {chapter}{\numberline {C}The effect of weighting in regard to the time taken}{43}
+\contentsline {chapter}{\numberline {D}The effect of weighting and parameters combined in regard to the time taken}{45}
+\contentsline {chapter}{\numberline {E}The effect of weighting and parameters vs parameters in regard to the time taken}{47}

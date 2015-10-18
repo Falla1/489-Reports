@@ -1,0 +1,21 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Using Levenshtein edit distance metric to transform kitten to kitchen.}}{6}
+\contentsline {table}{\numberline {2.2}{\ignorespaces The Monge \& Elkan edit distance metric to calculate the similarity between "paul johnson" and "johson paule"}}{7}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces A table of the large benchmarks. The table describes each benchmark and displays the author(s).}}{19}
+\contentsline {table}{\numberline {4.2}{\ignorespaces A table of the small benchmarks. The table describes each benchmark and displays the author(s).}}{19}
+\contentsline {table}{\numberline {4.3}{\ignorespaces A table of the large benchmarks. The table shows the types of tests, numbers of tests, lines of code and version number.}}{19}
+\contentsline {table}{\numberline {4.4}{\ignorespaces A table of the small benchmarks. The table shows the types of tests, numbers of tests, lines of code and version number.}}{19}
+\contentsline {table}{\numberline {4.5}{\ignorespaces A table showing the significant relationship between the use of a pipeline with two stages and a pipeline with three for each benchmark. The table shows that pipeline of length two performs better than a pipeline of length three for all the benchmarks apart from Whiley. It is important to note that a '+' represents an significant increase and a '-' represents an significant decrease.}}{20}
+\contentsline {table}{\numberline {4.6}{\ignorespaces A table showing the significant relationship between the use of parameters and no parameters for each benchmark}}{26}
+\contentsline {table}{\numberline {4.7}{\ignorespaces A table showing the significant relationship between the use of weighting and no weighting for each benchmark}}{28}
+\contentsline {table}{\numberline {4.8}{\ignorespaces A table displaying a list of coding's for the Whiley Benchmark for four of the different techniques used.}}{30}
+\contentsline {table}{\numberline {4.9}{\ignorespaces A table displaying a list of coding's for the Whiley Benchmark for four of the different techniques used.}}{30}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

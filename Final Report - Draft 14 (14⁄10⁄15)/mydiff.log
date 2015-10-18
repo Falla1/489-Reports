@@ -1,0 +1,1523 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (Web2C 2015) (preloaded format=latex 2015.6.17)  14 OCT 2015 16:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**mydiff.tex
+(./mydiff.tex
+LaTeX2e <2015/01/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, uk
+rainian, turkish, swedish, spanish, slovenian, slovak, serbian, russian, romani
+an, portuguese, polish, bokmal, nynorsk, latin, italian, irish, indonesian, ice
+landic, hungarian, monogreek, greek, german, ngerman, french, finnish, estonian
+, esperanto, dutch, danish, czech, croatian, catalan, bulgarian, basque, loaded
+.
+(/usr/pkg/share/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/pkg/share/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/pkg/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
+(/usr/pkg/share/texmf-dist/tex/latex/listings/listings.sty
+(/usr/pkg/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\lst@mode=\count89
+\lst@gtempboxa=\box28
+\lst@token=\toks17
+\lst@length=\count90
+\lst@currlwidth=\dimen103
+\lst@column=\count91
+\lst@pos=\count92
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count93
+\lst@lineno=\count94
+\lst@maxwidth=\dimen106
+
+(/usr/pkg/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
+\lst@framebox=\box29
+)
+(/usr/pkg/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/pkg/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/pkg/share/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 142.
+
+(/usr/pkg/share/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+)
+(/usr/pkg/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+))
+(/usr/pkg/share/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count97
+\c@@ppsavesec=\count98
+\c@@ppsaveapp=\count99
+)
+(/usr/pkg/share/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count100
+)
+(/usr/pkg/share/texmf-dist/tex/latex/xargs/xargs.sty
+Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
+
+(/usr/pkg/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/pkg/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/pkg/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks18
+\XKV@tempa@toks=\toks19
+)
+\XKV@depth=\count101
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\xargs@max=\count102
+\xargs@toksa=\toks20
+\xargs@toksb=\toks21
+)
+(/usr/pkg/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/pkg/share/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/pkg/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/pkg/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/pkg/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+
+! Package pdftex.def Error: PDF mode expected, but DVI mode detected!
+(pdftex.def)                If you are using `latex', then call `pdflatex'.
+(pdftex.def)                Otherwise check and correct the driver options.
+(pdftex.def)                Error recovery by switching to PDF mode.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.433   }\@ehc
+              
+? 
+\Gread@gobject=\count103
+)
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+ (/usr/pkg/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+))
+(/usr/pkg/share/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
+(/usr/pkg/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/pkg/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/pkg/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/pkg/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen107
+\pgfutil@tempdimb=\dimen108
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box30
+
+(/usr/pkg/share/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+))
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+
+(/usr/pkg/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/pkg/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/pkg/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/pkg/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/pkg/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+)
+\Gin@req@height=\dimen109
+\Gin@req@width=\dimen110
+)
+(/usr/pkg/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen111
+\pgf@y=\dimen112
+\pgf@xa=\dimen113
+\pgf@ya=\dimen114
+\pgf@xb=\dimen115
+\pgf@yb=\dimen116
+\pgf@xc=\dimen117
+\pgf@yc=\dimen118
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count104
+\c@pgf@countb=\count105
+\c@pgf@countc=\count106
+\c@pgf@countd=\count107
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+))) (/usr/pkg/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count108
+\pgfsyssoftpath@bigbuffer@items=\count109
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen119
+\pgfmath@count=\count110
+\pgfmath@box=\box31
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.
+code.tex)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.te
+x)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.cod
+e.tex)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithme
+tics.code.tex)))
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count111
+))
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen120
+\pgf@picmaxx=\dimen121
+\pgf@picminy=\dimen122
+\pgf@picmaxy=\dimen123
+\pgf@pathminx=\dimen124
+\pgf@pathmaxx=\dimen125
+\pgf@pathminy=\dimen126
+\pgf@pathmaxy=\dimen127
+\pgf@xx=\dimen128
+\pgf@xy=\dimen129
+\pgf@yx=\dimen130
+\pgf@yy=\dimen131
+\pgf@zx=\dimen132
+\pgf@zy=\dimen133
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code
+.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen134
+\pgf@path@lasty=\dimen135
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen136
+\pgf@shorten@start@additional=\dimen137
+) (/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+\pgfpic=\box32
+\pgf@hbox=\box33
+\pgf@layerbox@main=\box34
+\pgf@picture@serial@count=\count112
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.
+tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen138
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.co
+de.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen139
+\pgf@pt@y=\dimen140
+\pgf@pt@temp=\dimen141
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.cod
+e.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen142
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen143
+\pgf@sys@shading@range@num=\count113
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+\pgfexternal@startupbox=\box35
+)) (/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.
+tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+))) (/usr/pkg/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+\pgfnodeparttextbox=\box36
+) (/usr/pkg/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+)
+(/usr/pkg/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen144
+\pgf@nodesepend=\dimen145
+)
+(/usr/pkg/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+)) (/usr/pkg/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/pkg/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/pkg/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen146
+\pgffor@skip=\dimen147
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+))
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.cod
+e.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count114
+\pgfplotmarksize=\dimen148
+)
+\tikz@lastx=\dimen149
+\tikz@lasty=\dimen150
+\tikz@lastxsaved=\dimen151
+\tikz@lastysaved=\dimen152
+\tikzleveldistance=\dimen153
+\tikzsiblingdistance=\dimen154
+\tikz@figbox=\box37
+\tikz@figbox@bg=\box38
+\tikz@tempbox=\box39
+\tikz@tempbox@bg=\box40
+\tikztreelevel=\count115
+\tikznumberofchildren=\count116
+\tikznumberofcurrentchild=\count117
+\tikz@fig@count=\count118
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count119
+\pgfmatrixcurrentcolumn=\count120
+\pgf@matrix@numberofcolumns=\count121
+)
+\tikz@expandcount=\count122
+
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlib
+rarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+)))
+(/usr/pkg/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlib
+rarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
+) (/usr/pkg/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count123
+\calc@Bcount=\count124
+\calc@Adimen=\dimen155
+\calc@Bdimen=\dimen156
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count125
+\calc@Cskip=\skip45
+)
+\c@@todonotes@numberoftodonotes=\count126
+) (/usr/pkg/share/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+\theorem@style=\toks34
+\theorem@@style=\toks35
+\theorembodyfont=\toks36
+\theoremnumbering=\toks37
+\theorempreskipamount=\skip46
+\theorempostskipamount=\skip47
+\theoremframepreskipamount=\skip48
+\theoremframepostskipamount=\skip49
+\theoreminframepreskipamount=\skip50
+\theoreminframepostskipamount=\skip51
+\theorem@preskip=\toks38
+\theorem@postskip=\toks39
+\theorem@framepreskip=\toks40
+\theorem@framepostskip=\toks41
+\theorem@inframepreskip=\toks42
+\theorem@inframepostskip=\toks43
+\theoremindent=\dimen157
+\theorem@indent=\dimen158
+\theoremrightindent=\dimen159
+\theorem@rightindent=\dimen160
+\theoremheaderfont=\toks44
+\theoremseparator=\toks45
+\theoremprework=\toks46
+\theorempostwork=\toks47
+\theoremsymbol=\toks48
+\qedsymbol=\toks49
+\theoremkeyword=\toks50
+\qedsymbol=\toks51
+\thm@topsep=\skip52
+\thm@topsepadd=\skip53
+)
+\c@hyp=\count127
+\c@subhyp=\count128
+ (/usr/pkg/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/pkg/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(/usr/pkg/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/pkg/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks52
+\ex@=\dimen161
+))
+(/usr/pkg/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen162
+)
+(/usr/pkg/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count129
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count130
+\leftroot@=\count131
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count132
+\DOTSCASE@=\count133
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box41
+\strutbox@=\box42
+\big@size=\dimen163
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count134
+\c@MaxMatrixCols=\count135
+\dotsspace@=\muskip11
+\c@parentequation=\count136
+\dspbrk@lvl=\count137
+\tag@help=\toks53
+\row@=\count138
+\column@=\count139
+\maxfields@=\count140
+\andhelp@=\toks54
+\eqnshift@=\dimen164
+\alignsep@=\dimen165
+\tagshift@=\dimen166
+\tagwidth@=\dimen167
+\totwidth@=\dimen168
+\lineht@=\dimen169
+\@envbody=\toks55
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks56
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+\@float@every@fig=\toks57
+\c@fig=\count141
+ (./vuwproject.sty
+(/usr/pkg/share/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+VUW Honours reports modifications -- Mar 1995
+Modified to handle different degrees 2003
+Modified to handle duplex printing properly 2006
+\@abstract=\box43
+) (/usr/pkg/share/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box44
+\UL@hyphenbox=\box45
+\UL@skip=\skip57
+\UL@hook=\toks58
+\UL@height=\dimen170
+\UL@pe=\count142
+\UL@pixel=\dimen171
+\ULC@box=\box46
+Package: ulem 2012/05/18
+\ULdepth=\dimen172
+)
+No file mydiff.aux.
+\openout1 = `mydiff.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 146.
+
+(/usr/pkg/share/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+\c@lstlisting=\count143
+
+(/usr/pkg/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count144
+\scratchdimen=\dimen173
+\scratchbox=\box47
+\nofMPsegments=\count145
+\nofMParguments=\count146
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen174
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
+\everyMPtoPDFconversion=\toks60
+) ABD: EveryShipout initializing macros
+(/usr/pkg/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/pkg/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/pkg/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/pkg/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/pkg/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/pkg/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/pkg/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/pkg/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/pkg/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+34.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/pkg/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+<VUWlogo.png, id=4, 325.215pt x 152.10313pt>
+File: VUWlogo.png Graphic file (type png)
+ <use VUWlogo.png>
+Package pdftex.def Info: VUWlogo.png used on input line 162.
+(pdftex.def)             Requested size: 158.76663pt x 74.25731pt.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 162
+.
+
+(/usr/pkg/share/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 162
+.
+
+(/usr/pkg/share/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 162
+.
+
+(/usr/pkg/share/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 162
+.
+
+(/usr/pkg/share/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 162.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 162.
+ [-1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./VUWlogo.png>] [0]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 164.
+
+No file mydiff.toc.
+\tf@toc=\write4
+\openout4 = `mydiff.toc'.
+
+[1
+
+
+] [2
+
+]
+No file mydiff.lof.
+\tf@lof=\write5
+\openout5 = `mydiff.lof'.
+
+[3] [4
+
+]
+No file mydiff.lot.
+\tf@lot=\write6
+\openout6 = `mydiff.lot'.
+
+[5] [6
+
+]
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 178.
+
+LaTeX Warning: Citation `jeffrey2005test' on page 1 undefined on input line 180
+.
+
+
+LaTeX Warning: Citation `issuetrack' on page 1 undefined on input line 182.
+
+
+LaTeX Warning: Citation `whentotest' on page 1 undefined on input line 182.
+
+
+LaTeX Warning: Citation `wong1995effect' on page 1 undefined on input line 185.
+
+
+
+LaTeX Warning: Citation `wong1999test' on page 1 undefined on input line 185.
+
+
+LaTeX Warning: Citation `rothermel1998empirical' on page 1 undefined on input l
+ine 185.
+
+
+LaTeX Warning: Citation `rothermel2002empirical' on page 1 undefined on input l
+ine 185.
+
+
+LaTeX Warning: Citation `koochakzadeh2009test' on page 1 undefined on input lin
+e 185.
+
+
+LaTeX Warning: Citation `zhang2011empirical' on page 1 undefined on input line 
+185.
+
+
+LaTeX Warning: Citation `li2008static' on page 1 undefined on input line 185.
+
+
+LaTeX Warning: Reference `fig:spectra' on page 1 undefined on input line 187.
+
+
+LaTeX Warning: Reference `fig:spectra' on page 1 undefined on input line 187.
+
+<spectra.png, id=35, 355.3275pt x 143.78719pt>
+File: spectra.png Graphic file (type png)
+ <use spectra.png>
+Package pdftex.def Info: spectra.png used on input line 191.
+(pdftex.def)             Requested size: 170.71791pt x 85.36026pt.
+ [1
+
+ <./spectra.png>]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 205.
+
+ (/usr/pkg/share/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 205.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 209.
+ [2]
+Chapter 2.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 218.
+
+LaTeX Warning: Citation `chaos' on page 3 undefined on input line 219.
+
+
+LaTeX Warning: Citation `wong1995effect' on page 3 undefined on input line 219.
+
+
+
+LaTeX Warning: Citation `wong1999test' on page 3 undefined on input line 219.
+
+
+LaTeX Warning: Citation `rothermel1998empirical' on page 3 undefined on input l
+ine 219.
+
+
+LaTeX Warning: Citation `rothermel2002empirical' on page 3 undefined on input l
+ine 219.
+
+
+LaTeX Warning: Citation `koochakzadeh2009test' on page 3 undefined on input lin
+e 219.
+
+
+LaTeX Warning: Citation `zhang2011empirical' on page 3 undefined on input line 
+219.
+
+
+LaTeX Warning: Citation `li2008static' on page 3 undefined on input line 219.
+
+
+LaTeX Warning: Citation `wong1995effect' on page 3 undefined on input line 221.
+
+
+
+LaTeX Warning: Citation `wong1999test' on page 3 undefined on input line 221.
+
+
+LaTeX Warning: Citation `rothermel1998empirical' on page 3 undefined on input l
+ine 221.
+
+
+LaTeX Warning: Citation `rothermel2002empirical' on page 3 undefined on input l
+ine 221.
+
+
+LaTeX Warning: Citation `koochakzadeh2009test' on page 3 undefined on input lin
+e 223.
+
+
+LaTeX Warning: Reference `fig:venndiagram' on page 3 undefined on input line 22
+3.
+
+[3
+
+] <VennDiagram.png, id=49, 502.87875pt x 304.13625pt>
+File: VennDiagram.png Graphic file (type png)
+ <use VennDiagram.png>
+Package pdftex.def Info: VennDiagram.png used on input line 227.
+(pdftex.def)             Requested size: 284.52603pt x 170.71887pt.
+
+
+LaTeX Warning: Citation `zhang2011empirical' on page 4 undefined on input line 
+233.
+
+
+LaTeX Warning: Citation `harrold1993methodology' on page 4 undefined on input l
+ine 233.
+
+
+LaTeX Warning: Citation `li2008static' on page 4 undefined on input line 235.
+
+
+LaTeX Warning: Citation `koochakzadeh2009test' on page 4 undefined on input lin
+e 235.
+
+
+LaTeX Warning: Citation `li2008static' on page 4 undefined on input line 235.
+
+[4 <./VennDiagram.png>]
+
+LaTeX Warning: Citation `graham1982gprof' on page 5 undefined on input line 239
+.
+
+
+LaTeX Warning: Citation `Zhuang06accurate' on page 5 undefined on input line 23
+9.
+
+
+LaTeX Warning: Reference `fig:callgraph' on page 5 undefined on input line 239.
+
+
+<CallGraph.png, id=54, 685.56125pt x 464.73625pt>
+File: CallGraph.png Graphic file (type png)
+ <use CallGraph.png>
+Package pdftex.def Info: CallGraph.png used on input line 243.
+(pdftex.def)             Requested size: 441.01772pt x 298.969pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `navarro2001guided' on page 5 undefined on input line 2
+51.
+
+
+LaTeX Warning: Citation `cohen2003comparison' on page 5 undefined on input line
+ 251.
+
+
+LaTeX Warning: Citation `monge1997efficient' on page 5 undefined on input line 
+251.
+
+
+LaTeX Warning: Citation `levenshtein1966binary' on page 5 undefined on input li
+ne 251.
+
+[5]
+
+LaTeX Warning: Reference `levenTable' on page 6 undefined on input line 253.
+
+
+LaTeX Warning: Reference `levenTable' on page 6 undefined on input line 253.
+
+
+LaTeX Warning: Reference `mongeTable' on page 6 undefined on input line 269.
+
+
+LaTeX Warning: Reference `mongeTable' on page 6 undefined on input line 269.
+
+
+Underfull \vbox (badness 2384) has occurred while \output is active []
+
+ [6 <./CallGraph.png>]
+
+LaTeX Warning: Citation `wilcoxon1945individual' on page 7 undefined on input l
+ine 292.
+
+
+LaTeX Warning: Citation `nonparametric' on page 7 undefined on input line 292.
+
+
+LaTeX Warning: Citation `mcdonald2009handbook' on page 7 undefined on input lin
+e 292.
+
+
+LaTeX Warning: Citation `georges2007statistically' on page 7 undefined on input
+ line 298.
+
+
+LaTeX Warning: Citation `blackburn2008wake' on page 7 undefined on input line 2
+98.
+
+[7] [8]
+Chapter 3.
+
+LaTeX Warning: Reference `C:intro' on page 9 undefined on input line 313.
+
+
+LaTeX Warning: Reference `parameterTrace' on page 9 undefined on input line 328
+.
+
+[9
+
+]
+
+LaTeX Warning: Citation `aspectj' on page 10 undefined on input line 330.
+
+
+LaTeX Warning: Reference `fig:aspectused' on page 10 undefined on input line 33
+0.
+
+
+LaTeX Warning: Reference `fig:aspectused' on page 10 undefined on input line 33
+0.
+
+<aspect.png, id=73, 617.30624pt x 173.14688pt>
+File: aspect.png Graphic file (type png)
+ <use aspect.png>
+Package pdftex.def Info: aspect.png used on input line 334.
+(pdftex.def)             Requested size: 441.01772pt x 123.70396pt.
+
+
+LaTeX Warning: Reference `C:intro' on page 10 undefined on input line 347.
+
+[10 <./aspect.png>]
+
+LaTeX Warning: Reference `fig:callingexample' on page 11 undefined on input lin
+e 349.
+
+<callingexample.png, id=77, 605.26125pt x 233.87375pt>
+File: callingexample.png Graphic file (type png)
+
+<use callingexample.png>
+Package pdftex.def Info: callingexample.png used on input line 356.
+(pdftex.def)             Requested size: 441.83702pt x 170.71652pt.
+
+Overfull \hbox (0.8193pt too wide) in paragraph at lines 356--357
+ [] 
+ []
+
+
+LaTeX Warning: Reference `fig:callingexample' on page 11 undefined on input lin
+e 365.
+
+[11 <./callingexample.png>]
+
+LaTeX Warning: Reference `fig:callingexample' on page 12 undefined on input lin
+e 370.
+
+
+LaTeX Warning: Citation `Zhuang06accurate' on page 12 undefined on input line 3
+73.
+
+
+LaTeX Warning: Reference `fig:callingexample' on page 12 undefined on input lin
+e 375.
+
+
+LaTeX Warning: Reference `editdistbg' on page 12 undefined on input line 383.
+
+
+LaTeX Warning: Citation `monge1997efficient' on page 12 undefined on input line
+ 383.
+
+
+LaTeX Warning: Citation `levenshtein1966binary' on page 12 undefined on input l
+ine 383.
+
+
+LaTeX Warning: Reference `fig:mongevleven' on page 12 undefined on input line 3
+85.
+
+<MongeVLeven.png, id=83, 514.92375pt x 203.76125pt>
+File: MongeVLeven.png Graphic file (type png)
+ <use MongeVLeven.png>
+Package pdftex.def Info: MongeVLeven.png used on input line 389.
+(pdftex.def)             Requested size: 441.01772pt x 174.51926pt.
+
+[12]
+
+LaTeX Warning: Reference `fig:pipeline' on page 13 undefined on input line 398.
+
+
+
+LaTeX Warning: Reference `fig:pipeline' on page 13 undefined on input line 398.
+
+
+<Pipeline.jpg, id=87, 795.97375pt x 83.31125pt>
+File: Pipeline.jpg Graphic file (type jpg)
+ <use Pipeline.jpg>
+Package pdftex.def Info: Pipeline.jpg used on input line 401.
+(pdftex.def)             Requested size: 441.01772pt x 46.15945pt.
+
+
+LaTeX Warning: Reference `fig:pipelineExample' on page 13 undefined on input li
+ne 406.
+
+[13 <./MongeVLeven.png> <./Pipeline.jpg>]
+<callingexampleExtra.png, id=93, 715.67375pt x 376.40625pt>
+File: callingexampleExtra.png Graphic file (type png)
+
+<use callingexampleExtra.png>
+Package pdftex.def Info: callingexampleExtra.png used on input line 424.
+(pdftex.def)             Requested size: 441.01772pt x 231.95656pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]
+
+LaTeX Warning: Citation `oraclereflection' on page 15 undefined on input line 4
+48.
+
+[15 <./callingexampleExtra.png>]
+
+LaTeX Warning: Citation `koochakzadeh2009test' on page 16 undefined on input li
+ne 455.
+
+
+LaTeX Warning: Citation `li2008static' on page 16 undefined on input line 455.
+
+
+LaTeX Warning: Reference `fig:weightingdiagram' on page 16 undefined on input l
+ine 455.
+
+<weightingdiagram.png, id=101, 665.48625pt x 223.83624pt>
+File: weightingdiagram.png Graphic file (type png)
+
+<use weightingdiagram.png>
+Package pdftex.def Info: weightingdiagram.png used on input line 464.
+(pdftex.def)             Requested size: 441.01962pt x 170.72185pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16] [17 <./weightingdiagram.png>] [18
+
+]
+Chapter 4.
+
+LaTeX Warning: Reference `C:workdone' on page 19 undefined on input line 485.
+
+
+LaTeX Warning: Citation `wilcoxon1945individual' on page 19 undefined on input 
+line 485.
+
+
+Overfull \hbox (28.20528pt too wide) in paragraph at lines 485--486
+|   []   |   []   |   []   |   []   |   [][][]|   []   |   []   |   []   |   []
+   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+LaTeX Warning: Reference `C:intro' on page 19 undefined on input line 488.
+
+
+LaTeX Warning: Reference `performanceEvalBG' on page 19 undefined on input line
+ 493.
+
+[19]
+
+LaTeX Warning: Citation `oracle2015' on page 20 undefined on input line 509.
+
+[20]
+
+LaTeX Warning: Reference `large_testdes' on page 21 undefined on input line 515
+.
+
+
+LaTeX Warning: Reference `small_testdes' on page 21 undefined on input line 515
+.
+
+
+LaTeX Warning: Reference `large_test' on page 21 undefined on input line 515.
+
+
+LaTeX Warning: Reference `small_test' on page 21 undefined on input line 515.
+
+
+LaTeX Warning: Citation `spring' on page 21 undefined on input line 526.
+
+
+Overfull \hbox (3.37843pt too wide) in paragraph at lines 521--534
+ [][] 
+ []
+
+
+Overfull \hbox (33.73135pt too wide) in paragraph at lines 555--564
+ [][] 
+ []
+
+
+Overfull \hbox (4.26543pt too wide) in paragraph at lines 570--576
+ [][] 
+ []
+
+[21]
+
+LaTeX Warning: Reference `pipelinesig' on page 22 undefined on input line 603.
+
+
+LaTeX Warning: Reference `pipelinesig' on page 22 undefined on input line 603.
+
+
+LaTeX Warning: Reference `fig:pipelinegraph' on page 22 undefined on input line
+ 605.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pipeline.png, id=122, 505.89pt x 505.89pt>
+File: Pipeline.png Graphic file (type png)
+ <use Pipeline.png>
+Package pdftex.def Info: Pipeline.png used on input line 625.
+(pdftex.def)             Requested size: 412.57072pt x 284.53154pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:pipelinegraph' on page 22 undefined on input line
+ 633.
+
+
+LaTeX Warning: Reference `fig:stagesinpipeline' on page 22 undefined on input l
+ine 633.
+
+
+LaTeX Warning: Reference `fig:pipelinecomp' on page 22 undefined on input line 
+633.
+
+[22] <PipelineComp.png, id=126, 775.89874pt x 314.17375pt>
+File: PipelineComp.png Graphic file (type png)
+
+<use PipelineComp.png>
+Package pdftex.def Info: PipelineComp.png used on input line 639.
+(pdftex.def)             Requested size: 441.02376pt x 227.61911pt.
+ [23]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24 <./Pipeline.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:kdepthgraph' on page 25 undefined on input line 6
+62.
+
+
+LaTeX Warning: Reference `fig:kdepthtime' on page 25 undefined on input line 66
+2.
+
+<KDepth.png, id=134, 505.89pt x 505.89pt>
+File: KDepth.png Graphic file (type png)
+ <use KDepth.png>
+Package pdftex.def Info: KDepth.png used on input line 667.
+(pdftex.def)             Requested size: 412.57072pt x 284.53154pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<KDepthTime.png, id=135, 505.89pt x 505.89pt>
+File: KDepthTime.png Graphic file (type png)
+ <use KDepthTime.png>
+Package pdftex.def Info: KDepthTime.png used on input line 675.
+(pdftex.def)             Requested size: 441.02388pt x 369.891pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:kdepthgraph' on page 25 undefined on input line 6
+81.
+
+
+LaTeX Warning: Reference `sec:pipelineEva' on page 25 undefined on input line 6
+81.
+
+
+LaTeX Warning: Reference `fig:stagesinpipeline' on page 25 undefined on input l
+ine 681.
+
+
+LaTeX Warning: Reference `fig:stagesinpipeline' on page 25 undefined on input l
+ine 681.
+
+[25 <./PipelineComp.png>] <stagesinpipeline.png, id=140, 505.89pt x 505.89pt>
+File: stagesinpipeline.png Graphic file (type png)
+
+<use stagesinpipeline.png>
+Package pdftex.def Info: stagesinpipeline.png used on input line 689.
+(pdftex.def)             Requested size: 441.02388pt x 312.9847pt.
+
+
+LaTeX Warning: Reference `fig:pipelinegraph' on page 26 undefined on input line
+ 690.
+
+
+LaTeX Warning: Reference `fig:pipelinegraph' on page 26 undefined on input line
+ 690.
+
+
+LaTeX Warning: Reference `fig:pipelinegraph' on page 26 undefined on input line
+ 690.
+
+
+LaTeX Warning: Reference `fig:pipelinegraph' on page 26 undefined on input line
+ 690.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:kdepthtime' on page 26 undefined on input line 69
+4.
+
+
+LaTeX Warning: Reference `fig:kdepthtime' on page 26 undefined on input line 69
+4.
+
+[26 <./KDepth.png (PNG copy)>]
+Overfull \hbox (2.95485pt too wide) in paragraph at lines 712--714
+\OT1/ppl/m/n/10.95 would cause non-deterministic at-tributes to []|   []   |   
+[]   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+[27 <./KDepthTime.png (PNG copy)>]
+
+LaTeX Warning: Reference `parametersig' on page 28 undefined on input line 719.
+
+
+
+LaTeX Warning: Reference `parametersig' on page 28 undefined on input line 719.
+
+
+
+LaTeX Warning: Reference `fig:paramtime' on page 28 undefined on input line 719
+.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Parameters.png, id=147, 505.89pt x 505.89pt>
+File: Parameters.png Graphic file (type png)
+ <use Parameters.png>
+Package pdftex.def Info: Parameters.png used on input line 739.
+(pdftex.def)             Requested size: 412.57072pt x 284.53154pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:paramgraph' on page 28 undefined on input line 74
+7.
+
+
+LaTeX Warning: Reference `fig:paramtime' on page 28 undefined on input line 747
+.
+
+
+LaTeX Warning: Reference `kdepthcomp' on page 28 undefined on input line 747.
+
+[28 <./stagesinpipeline.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:paramgraph' on page 29 undefined on input line 74
+9.
+
+
+LaTeX Warning: Reference `fig:paramgraph' on page 29 undefined on input line 74
+9.
+
+
+LaTeX Warning: Reference `kdepthcomp' on page 29 undefined on input line 749.
+
+
+LaTeX Warning: Reference `whileycoding' on page 29 undefined on input line 749.
+
+
+
+LaTeX Warning: Reference `metriccoding' on page 29 undefined on input line 749.
+
+
+
+LaTeX Warning: Reference `C:related' on page 29 undefined on input line 765.
+
+[29]
+
+LaTeX Warning: Reference `weightingsig' on page 30 undefined on input line 774.
+
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Weighting.png, id=155, 505.89pt x 505.89pt>
+File: Weighting.png Graphic file (type png)
+ <use Weighting.png>
+Package pdftex.def Info: Weighting.png used on input line 797.
+(pdftex.def)             Requested size: 412.57072pt x 284.53154pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `koochakzadeh2009test' on page 30 undefined on input li
+ne 810.
+
+
+LaTeX Warning: Citation `li2008static' on page 30 undefined on input line 810.
+
+
+LaTeX Warning: Citation `koochakzadeh2009test' on page 30 undefined on input li
+ne 816.
+
+
+LaTeX Warning: Citation `li2008static' on page 30 undefined on input line 816.
+
+
+LaTeX Warning: Reference `whileycoding' on page 30 undefined on input line 816.
+
+
+
+LaTeX Warning: Reference `metriccoding' on page 30 undefined on input line 816.
+
+
+[30 <./Parameters.png (PNG copy)>]
+
+LaTeX Warning: Reference `weightingsig' on page 31 undefined on input line 818.
+
+
+
+LaTeX Warning: Reference `fig:weighttime' on page 31 undefined on input line 81
+8.
+
+
+LaTeX Warning: Reference `fig:weighttime' on page 31 undefined on input line 81
+8.
+
+
+LaTeX Warning: Reference `whileycoding' on page 31 undefined on input line 827.
+
+
+
+LaTeX Warning: Reference `metriccoding' on page 31 undefined on input line 827.
+
+
+
+LaTeX Warning: Reference `sec:param' on page 31 undefined on input line 827.
+
+
+LaTeX Warning: Reference `sec:weight' on page 31 undefined on input line 827.
+
+
+LaTeX Warning: Reference `metriccoding' on page 31 undefined on input line 827.
+
+
+
+Overfull \hbox (28.61833pt too wide) in paragraph at lines 832--846
+ [][] 
+ []
+
+[31]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 851.
+
+
+Overfull \hbox (37.59717pt too wide) in paragraph at lines 853--865
+ [][] 
+ []
+
+
+Overfull \hbox (11.5839pt too wide) in paragraph at lines 874--878
+|   []   [][]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |  
+ []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+[32 <./Weighting.png (PNG copy)>]
+
+LaTeX Warning: Reference `sec:pipelineEva' on page 33 undefined on input line 8
+84.
+
+[33] [34
+
+]
+Chapter 5.
+
+LaTeX Warning: Reference `C:intro' on page 35 undefined on input line 918.
+
+[35]
+
+LaTeX Warning: Reference `C:intro' on page 36 undefined on input line 926.
+
+[36]
+
+LaTeX Warning: Citation `li2008static' on page 37 undefined on input line 967.
+
+
+LaTeX Warning: Citation `koochakzadeh2009test' on page 37 undefined on input li
+ne 967.
+
+[37] [38
+
+] [39
+
+] [40]
+Appendix A.
+<PipelineTime.png, id=190, 505.89pt x 505.89pt>
+File: PipelineTime.png Graphic file (type png)
+ <use PipelineTime.png>
+Package pdftex.def Info: PipelineTime.png used on input line 975.
+(pdftex.def)             Requested size: 441.02388pt x 369.891pt.
+ [41
+
+ <./PipelineTime.png (PNG copy)>] [42
+
+]
+Appendix B.
+<ParamTime.png, id=199, 505.89pt x 505.89pt>
+File: ParamTime.png Graphic file (type png)
+ <use ParamTime.png>
+Package pdftex.def Info: ParamTime.png used on input line 983.
+(pdftex.def)             Requested size: 441.02388pt x 369.891pt.
+ [43 <./ParamTime.png (PNG copy)>] [44
+
+]
+Appendix C.
+<WeightTime.png, id=206, 505.89pt x 505.89pt>
+File: WeightTime.png Graphic file (type png)
+ <use WeightTime.png>
+Package pdftex.def Info: WeightTime.png used on input line 991.
+(pdftex.def)             Requested size: 441.02388pt x 369.891pt.
+ [45 <./WeightTime.png (PNG copy)>] [46
+
+]
+Appendix D.
+<WeightnParamTime.png, id=213, 505.89pt x 505.89pt>
+File: WeightnParamTime.png Graphic file (type png)
+ <use WeightnParamTime.png>
+Package pdftex.def Info: WeightnParamTime.png used on input line 999.
+(pdftex.def)             Requested size: 441.02388pt x 369.891pt.
+
+[47 <./WeightnParamTime.png (PNG copy)>] [48
+
+]
+Appendix E.
+<WeightnParamvParamTime.png, id=221, 505.89pt x 505.89pt>
+File: WeightnParamvParamTime.png Graphic file (type png)
+
+<use WeightnParamvParamTime.png>
+Package pdftex.def Info: WeightnParamvParamTime.png used on input line 1007.
+(pdftex.def)             Requested size: 441.02388pt x 369.891pt.
+ [49 <./WeightnParamvParamTime.png (PNG copy)>] [50
+
+]
+No file mydiff.bbl.
+\tf@thm=\write7
+\openout7 = `mydiff.thm'.
+
+(./mydiff.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 15240 strings out of 493919
+ 287377 string characters out of 6158804
+ 478743 words of memory out of 5000000
+ 18153 multiletter control sequences out of 15000+600000
+ 29765 words of font info for 75 fonts, out of 8000000 for 9000
+ 774 hyphenation exceptions out of 8191
+ 62i,11n,76p,3190b,699s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/pkg/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/pkg/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/pkg/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/pkg/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/latxfont/lasy6.pfb></usr/pkg/share/texmf-dist/fonts/type1/urw/palat
+ino/uplb8a.pfb></usr/pkg/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
+/usr/pkg/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on mydiff.pdf (58 pages, 982491 bytes).
+PDF statistics:
+ 252 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+

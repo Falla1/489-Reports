@@ -1,0 +1,31 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A spectra where each colour represents different method execution details. We see similarities between Tests 2 and 3. In contrast, Test 1 is different from 2 and 3. }}{1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The coverage of each test is shown by a circle. It shows that T4 and T5 are redundant as T3 already covers those statements.}}{4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A diagram showing the three different variations of Call Graph information. Where each have a varying level of information that is stored.}}{6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A simplified point cut within AspectJ. The first point cut is for when a new test is executed and the second when a new method is executed.}}{10}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces A simple representation of a call tree of three that is traced from a test. Each letter represents a method call and the bold letter is the active method in each line of the call tree.}}{11}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Trace information used to show the difference between Monge \& Elkan and Levenshtein metric implementations. The Monge \& Elkan metric will disregard ordering and measure these test cases as being the same. The Levenshtein metric examines one to one and will measure the test cases as having no similarities.}}{12}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Trace information goes in at the start of the pipeline. After each stage there should be a reduction of comparisons that the next stage has to complete. The last stage should be the most computationally heavy.}}{13}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A two stage pipeline that analyses the trace information shown. The first stage uses a "unique method calls" filter with a 98\% similarity and the second stage filters with a call tree of K Depth three with a 98\% similarity. After analysing the data, no test cases are returned as being redundant.}}{14}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces A diagram showing how the different size of the test case can be affected by setup and teardown methods. The ``Exercise" refers to the core test method calls}}{16}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A figure showing the effect that the different pipeline lengths have on the number of comparisons during the final stage (Most computationally heavy). }}{21}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The circle size represents the data that is left in the pipeline. The figure shows that the difference that is between a two stage pipeline and a three stage only has limited room for a reduction in test cases identified. This shows the time taken to execute the extra stage costs more than it saves.}}{22}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A figure showing the effect that a change in the depth of the call tree has on the number of redundant tests are identified.}}{23}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A figure showing the relationship that using a different K Depth has on the total time taken to analyse the data.}}{24}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A figure showing the the number of comparisons that each stage performs. The pipeline contains two stages and is from Experiment \uppercase {ii\relax }. The graph how the first stage heuristic is able to reduce a large number of the comparisons needed to do for the subsequent stage.}}{25}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A figure showing the effect that using parameters has on the number of redundant tests are identified.}}{27}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces A figure showing the effect that using weighting has on the number of redundant tests are identified.}}{29}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces A figure showing the relationship that using different pipeline sizes has on the total time taken to analyse the data.}}{39}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces A figure showing the relationship that using parameters has on the total time taken to analyse the data.}}{41}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces A figure showing the relationship that using weighting has on the total time taken to analyse the data.}}{43}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces A figure showing the relationship that using weighting and parameters combined has on the total time taken to analyse the data.}}{45}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces A figure showing the relationship that using weighting and parameters combined vs parameters alone has on the total time taken to analyse the data.}}{47}
